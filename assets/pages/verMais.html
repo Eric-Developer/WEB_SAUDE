@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Web Saúde</title>
+    <link rel="stylesheet" href="/assets/css/VerMais.css">
+</head>
+
+<body>
+
+    <header class="container-menu">
+        <a href="/index.html"><h1>Web Saúde</h1></a>
+
+        <nav id="nav">
+            <button id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true"
+                aria-label="Abrir Menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu" id="menu">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="#catalogo">CATÁLOGO</a></li>
+                <li><a href="#">SOBRE</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="section-clinica-hospital">
+            <div class="div-clinica-hospital">
+                <h1>Clinica Medcenter</h1>
+            </div>
+            <div class="img-clinica-hospital">
+                <img src="/assets/img/undraw_medical_care_movn.svg" alt="img-clinica-hospital">
+            </div>
+        </section>
+        <section class="section-informações">
+            <div class="div-main">
+                <div class="div-informacao">
+                    <div class="div-img"><img src="" alt=""></div>
+                    <div class="div-nome">
+                        <h1><a href="#mapa">Mapa</a></h1>
+                    </div>
+                </div>
+                <div class="div-endereco">
+                    <div class="div-img"><img src="/assets/img/pin-de-localizacao.png" alt=""></div>
+                    <p>Av. Nossa Sra. de Fátima, 629 - Centro, Picos - PI,
+                        64600-148</p>
+                </div>
+                <hr>
+                <div class="div-atalhos">
+                    <ul>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Especialidades</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="div-main-horario">
+                <h1>Horário</h1>
+            <div class="horario">
+                <div class="div-img"><img src="/assets/img/hora-do-relogio.png" alt=""></div>
+                <div class="div-horarios">
+                    <h2>SEG A SEX</h2>
+                    <p>Aberto das <Strong> 07:00</Strong> até as <Strong>18:00</Strong></p>
+                    <h2>SAB</h2>
+                    <p><span> Fechado </span></p>
+                    <h2>DOM</h2>
+                    <p><span>Fechado</span></p>
+                </div>
+            </div>
+        </div>
+            <div class="sobre-nos">
+                <h1>Sobre nós</h1>
+                <div class="div-sobre-texto">
+                <p>Com mais de 16 anos na área da saúde, somos a maior clínica privada de toda região piauiense. Contamos com amplo espaço de atendimento oferecendo os mais variados tipos de exames laboratoriais e radiológicos, dotadas de aparelhos adquiridos no exterior e produzidos com a mais alta tecnologia disponível na área da saúde.</p>
+              </div>
+          </div>
+            <div class="div-contato">
+                <h1>Contato</h1>
+            <div class="div-img-contatos">
+                <div class="div-img-telefone">
+                    <img src="/assets/img/image-telefone.jpg" alt="">
+                    <p>999999999999</p>
+                </div>
+                <div class="div-img-instagram">
+                    <img src="/assets/img/image-instagram.jpg" alt="">
+                    <a href="https://www.instagram.com/medcenterpicos/">
+                        Clinica Medcenter
+                    </a>
+                </div>
+            </div>
+            </div>
+            <button class="button-especialidades"><a href=""> Especialidades</a></button>
+        </section>
+
+        <div id="mapa" class="div-mapa"></div>
+
+    </main>
+
+    <footer>
+        <h1>Web Saúde</h1>
+        <div class="div-email">
+            <p>Entre em Contato</p>
+            <p><a href="#">Email</a></p>
+        </div>
+        <h1>Web Saúde</h1>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            }
+            else {
+                itens.style.display = 'block';
+            }
+
+        }
+
+        const btnMobile = document.getElementById('btn-mobile');
+
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') {
+                event.preventDefault();
+                const nav = document.getElementById('nav');
+                nav.classList.toggle('active');
+                constactive = nav.classList.contains('active')
+            }
+
+        }
+
+
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+
+        //Script do mapa
+        var map = L.map('mapa').setView([-7.08484,-41.47252], 20);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([-7.08484,-41.47252]).addTo(map)
+            .bindPopup('Localização')
+            .openPopup();
+    </script>
+</body>
+
+</html>

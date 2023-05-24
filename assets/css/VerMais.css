@@ -1,0 +1,528 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+
+:root{
+  --primary-color: #00285f;
+  --secundary-color:#f9f9f1;
+  --card-radius: 15px;
+  --button-radius:7px;
+  --shadow:12px 12px 10px rgba(0,0,0,0.25);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ropa sans', serif,Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: #eeeeee;
+    
+} 
+/* cabeçalho */
+.container-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 6rem;
+    background-color: #00285f;
+    z-index: 1000;
+}
+
+.container-menu a{
+    text-decoration: none;
+}
+
+.section-clinica-hospital{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    margin-top: 120px;
+}
+.div-clinica-hospital h1{
+    color: var(--secundary-color);
+}
+.container-menu h1{
+    color: var(--secundary-color);
+}
+.container-menu nav ul{
+    display: flex;
+}
+
+.container-menu nav ul li{
+    list-style: none;
+}
+.container-menu  nav ul li a{
+    text-decoration: none;
+    color: var(--secundary-color);
+    margin: 25px;
+}
+
+.container-menu nav ul li a:hover{
+    text-decoration: underline;
+}
+/* parte principal*/
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* rodapé */
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+footer h1{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+footer .div-email p a{
+    color: var(--secundary-color);
+    text-decoration: none;
+}
+
+
+ /* section clinica */
+
+ .section-clinica-hospital{
+    flex-direction: column;
+    width: 290px;
+    height: 308px;
+   }
+   .div-clinica-hospital{
+    margin-left: 0px;
+    margin-bottom: 0px;
+   }
+   .div-clinica-hospital h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+   }
+
+   
+   .img-clinica-hospital img{
+    width: 193px;
+    height: 155px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+   }
+
+   /* section informações */
+.section-informações{
+    width: 93%;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+ 
+ }
+ .div-main{
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     width: 100%;
+     height: 280px;
+     background-color: var(--secundary-color);
+     margin:70px 0px 15px 0px;
+     box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
+ }
+ .div-main .div-informacao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+ }
+.div-main  .div-informacao .div-img{
+     width: 100px;
+     height: 100px;
+     border: 1px solid black;
+     margin-left: 15px;
+     margin-top: 20px;
+     border-radius: 15px;
+
+ }
+ .div-main .div-informacao .div-nome{
+    margin-top: 50px;
+    margin-right: 100px;
+ }
+
+ .section-informações .div-main .div-endereco{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+ }
+ .section-informações .div-main .div-endereco .div-img img{
+    width: 17px;
+    height: 17px;
+    margin-top: 5px;
+    display: flex;
+ }
+
+ .section-informações .div-main .div-endereco p{
+    font-size: 20px;
+ }
+.section-informações .div-main hr{
+   margin-bottom: 20px;
+   
+   }
+ .section-informações .div-main .div-atalhos ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 15px;
+   
+   }
+.section-informações .div-main .div-atalhos li a{
+    margin: 15px;
+    text-decoration: none;
+   
+   }
+
+   /* horario */
+.div-main-horario{
+    width: 100%;
+    height: 350px;
+    background-color: var(--secundary-color);
+    margin: 15px;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
+
+}
+.div-main-horario h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 4px;
+}
+ .horario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 30px;
+    gap: 60px;
+ }
+
+ .horario .div-img img{
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+ }
+ .horario .div-horarios{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 10px;
+    margin-left: 10px;
+    
+
+ }
+ .horario .div-horarios h2,p{
+    text-align: justify;
+    padding: 2px;
+ }
+ 
+ .horario .div-horarios h2{
+    color: var(--primary-color);
+    font-size: 25px;
+ }
+ .horario .div-horarios p{
+    font-size: 20px;
+ }
+ .horario .div-horarios p span{
+    color: red;
+ }
+ /* sobre */
+.sobre-nos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    background-color: var(--secundary-color);
+    margin: 20px;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
+    justify-content: space-between;
+
+}
+
+.sobre-nos h1{
+   text-align: center;
+   margin-top: 15px;
+   padding: 5px;
+   font-size: 30px;
+   
+}
+.div-sobre-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    padding: 20px;
+}
+.div-sobre-texto p{
+    margin-bottom: 90px;
+    text-align: justify;
+    font-size: 25px;
+
+}
+/* contato */
+.div-contato{
+    width: 100%;
+    height: 150px;
+    background-color: var(--secundary-color);
+    margin: 50px;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
+
+}
+
+.div-contato h1{
+    text-align: center;
+    margin-top: 5px;
+}
+.div-img-contatos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+    padding: 5px;
+}
+
+.div-img-contatos div img{
+    width: 20px;
+    height: 20px;
+}
+.div-img-telefone p{
+    display: inline;
+    margin-left:10px;
+}
+
+.div-img-telefone {
+    display: flex;
+    padding: 3px;
+}
+
+.div-img-instagram{
+    display: flex;
+    margin-top: 20px;
+    padding: 3px;
+}
+.div-img-instagram a{
+    margin-left: 10px;
+}
+
+/* especialidades */
+.button-especialidades{
+    width: 150px;
+    height: 38px;
+    border-radius: var(--button-radius);
+    background-color: var(--primary-color);
+
+}
+.button-especialidades a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--secundary-color);
+    height: 100%;
+    text-decoration: none;
+    padding: 10px;
+
+}
+/* mapa */
+.div-mapa{
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    margin-bottom: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer h1{
+    font-size: 12px;
+}
+
+footer .div-email p{
+    font-size: 10px;
+}
+
+/*------------------RESPONSIVIDADE------------------*/
+
+@media(max-width:540px){
+    
+     /* header mobile */
+            
+     .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        top: 70px;
+        right: 0px;
+        background-color: var(--primary-color);
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow:hidden;
+     }
+ 
+     #nav.active .menu{
+        height: 100vh;
+        visibility: visible;
+        overflow-y:auto;
+ 
+    }
+    #nav.active .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 1rem 0;
+    }
+    #nav.active .menu li a:hover{
+        color: crimson;
+   
+    }
+ 
+    #btn-mobile{
+         display: flex;
+         padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: var(--secundary-color);
+ 
+    }
+    .hamburger{
+        border-top:2px solid var(--primary-color);
+        width: 20px;
+    }
+ 
+    .hamburger::after,.hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: var(--primary-color);
+        margin-top: 5px;
+        position: relative;
+     }
+
+     #nav.active .hamburger{
+        border-top-color: transparent;
+  }
+    #nav.active .hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  #nav.active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+.div-mapa{
+    width: 90%;
+}
+
+.div-sobre-texto p{
+    font-size: 13px;
+
+}
+
+.horario .div-img img{
+    width: 100px;
+    height: 100px;
+ }
+
+ .div-main-horario h1{
+    font-size: 20px;
+}
+
+ .horario .div-horarios h2{
+    font-size: 17px;
+ }
+ .horario .div-horarios p{
+    font-size: 13px;
+ }
+ .horario{
+    gap: 0;
+    margin-top: 0px;
+ }
+ .div-main-horario{
+    height: 250px;
+ }
+
+ .sobre-nos{
+    height: 250px;
+}
+
+.sobre-nos h1{
+    font-size: 25px;
+ }
+
+}
+@media(min-width:1220px){
+#btn-mobile{
+    display: none;
+}
+nav{
+    display: block;
+}
+
+.section-clinica-hospital {
+    width: 690px;
+    height: 357px;
+}
+
+.div-clinica-hospital h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+}
+
+.div-div-clinica-hospital{
+    margin-left: 50px;
+}
+.img-clinica-hospital img{
+    width: 263.04px;
+    height: 203.61px;
+    margin-right: 30px;
+}
+
+/* section informações */
+
+
+
+.section-informações{
+    width: 60%;
+   
+ }
+.div-endereco .div-img img{
+    width: 50px;
+    height: 50px;
+}
+}
