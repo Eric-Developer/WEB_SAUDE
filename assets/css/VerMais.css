@@ -152,10 +152,16 @@ footer .div-email p a{
 .div-main  .div-informacao .div-img{
      width: 100px;
      height: 100px;
-     border: 1px solid black;
+     border: 2px solid black;
      margin-left: 15px;
      margin-top: 20px;
      border-radius: 15px;
+
+ }
+ .div-main  .div-informacao .div-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 
  }
  .div-main .div-informacao .div-nome{
@@ -375,6 +381,7 @@ footer .div-email p{
 /*------------------RESPONSIVIDADE------------------*/
 
 @media(max-width:540px){
+    
     
      /* header mobile */
             
