@@ -573,11 +573,11 @@ footer .div-email p a{
          
         .button-search a{
             
-            font-size: 1.0rem;
+            font-size: 15px;
         
         }
         .div-search input::placeholder{
-            font-size: 12px;
+            font-size: 8px;
         }
         /* filtros  */
 
