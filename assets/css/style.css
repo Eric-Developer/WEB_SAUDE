@@ -8,6 +8,9 @@
   --shadow:12px 12px 10px rgba(0,0,0,0.25);
 }
 
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  }
 *{
     padding: 0;
     margin: 0;
@@ -36,10 +39,12 @@ body{
     text-decoration: none;
 }
 
-.container-menu img{
-    width: 180px;
-    margin-bottom: 25px;
+.container-menu .logo img{
+    width: 200px;
+    margin-bottom: 20px;
 }
+
+
 .container-menu nav ul{
     display: flex;
 }
@@ -459,9 +464,12 @@ footer .div-email p a{
     .container-menu{
     justify-content: space-between;
     }
-    .container-menu img{
-        width: 170px;
+    .container-menu .logo img{
+        width: 80px;
+        margin-top: 25px;
+        margin-left: 20px;
     }
+   
       .menu{
         display: flex;
         flex-direction: column;
@@ -530,7 +538,7 @@ footer .div-email p a{
 }
 
            /* section slogan */
-
+     
        .section-slogan{
         flex-direction: column;
         width: 290px;

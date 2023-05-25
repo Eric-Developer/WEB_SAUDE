@@ -15,6 +15,9 @@
     font-family: 'ropa sans', serif,Arial, Helvetica, sans-serif;
 
 }
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  }
 body{
     background-color: #eeeeee;
     
@@ -85,7 +88,6 @@ main{
     width: 800px;
     height: 300px;
     border-radius: var(--card-radius);
-    margin: 30px;
     text-align: justify;
     padding: 15px;
 
@@ -147,14 +149,16 @@ footer .div-email p a{
 @media (max-width: 540px){
     
  
-            /* header mobile */
-      .container-menu{
+        /* header mobile */
+     .container-menu{
         justify-content: space-between;
       }    
-      .container-menu img{
-        width: 180px;
-      }    
-      .menu{
+      .container-menu  img{
+        width: 80px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+     .menu{
         display: flex;
         flex-direction: column;
         position: absolute;
