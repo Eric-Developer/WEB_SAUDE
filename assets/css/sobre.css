@@ -40,8 +40,7 @@ body{
 }
 
 .container-menu img{
-    width: 200px;
-    margin-bottom: 20px;
+    width: 100px;
 }
 .container-menu nav ul{
     display: flex;
@@ -90,6 +89,7 @@ main{
     border-radius: var(--card-radius);
     text-align: justify;
     padding: 15px;
+    margin-top: 40px;
 
 }
 .div-info h3{
@@ -155,7 +155,6 @@ footer .div-email p a{
       }    
       .container-menu  img{
         width: 80px;
-        margin-top: 25px;
         margin-left: 20px;
     }
      .menu{

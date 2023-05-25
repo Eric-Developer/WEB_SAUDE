@@ -34,8 +34,7 @@ body{
     z-index: 1000;
 }
 .container-menu img{
-    width: 200px;
-    margin-bottom: 20px;
+    width: 100px;
 }
 .container-menu a{
     text-decoration: none;
@@ -394,8 +393,7 @@ footer .div-email p{
         justify-content: space-between;
       }    
       .container-menu  img{
-        width: 80px;
-        margin-top: 25px;
+        width: 70px;
         margin-left: 20px;
     }
      .menu{
