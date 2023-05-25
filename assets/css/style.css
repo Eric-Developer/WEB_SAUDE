@@ -36,8 +36,9 @@ body{
     text-decoration: none;
 }
 
-.container-menu h1{
-    color: var(--secundary-color);
+.container-menu img{
+    width: 180px;
+    margin-bottom: 25px;
 }
 .container-menu nav ul{
     display: flex;
@@ -78,7 +79,7 @@ main{
 .div-slogan h1, .div-slogan p{
     color: var(--secundary-color);
 }
-.div-slogan h1{
+.div-slogan img{
     font-size: 3rem;
     margin-bottom: 15px;
 }
@@ -455,7 +456,12 @@ footer .div-email p a{
     
  
             /* header mobile */
-            
+    .container-menu{
+    justify-content: space-between;
+    }
+    .container-menu img{
+        width: 170px;
+    }
       .menu{
         display: flex;
         flex-direction: column;
@@ -493,6 +499,7 @@ footer .div-email p a{
         font-size: 1rem;
         cursor: pointer;
         background-color: var(--secundary-color);
+        margin-right: 30px;
  
     }
     .hamburger{

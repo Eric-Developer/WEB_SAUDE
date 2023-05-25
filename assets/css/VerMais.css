@@ -31,7 +31,10 @@ body{
     background-color: #00285f;
     z-index: 1000;
 }
-
+.container-menu img{
+    width: 200px;
+    margin-bottom: 20px;
+}
 .container-menu a{
     text-decoration: none;
 }
@@ -361,6 +364,7 @@ footer .div-email p a{
 }
 /* mapa */
 .div-mapa{
+    position: relative;
     margin-top: 50px;
     width: 50%;
     height: 300px;
@@ -384,7 +388,12 @@ footer .div-email p{
     
     
      /* header mobile */
-            
+     .container-menu{
+        justify-content: space-between;
+      }    
+      .container-menu img{
+        width: 150px;
+      }    
      .menu{
         display: flex;
         flex-direction: column;
@@ -422,6 +431,7 @@ footer .div-email p{
         font-size: 1rem;
         cursor: pointer;
         background-color: var(--secundary-color);
+        margin-right: 30px;
  
     }
     .hamburger{

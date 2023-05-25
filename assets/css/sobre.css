@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+
+:root{
+  --primary-color: #00285f;
+  --secundary-color:#f9f9f1;
+  --card-radius: 15px;
+  --button-radius:7px;
+  --shadow:12px 12px 10px rgba(0,0,0,0.25);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ropa sans', serif,Arial, Helvetica, sans-serif;
+
+}
+
+/* cabeçalho */
+.container-menu{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    background-color: #00285f;
+    z-index: 1000;
+}
+
+.container-menu a{
+    text-decoration: none;
+}
+
+.container-menu img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.container-menu nav ul{
+    display: flex;
+}
+
+.container-menu nav ul li{
+    list-style: none;
+}
+.container-menu  nav ul li a{
+    text-decoration: none;
+    color: var(--secundary-color);
+    margin: 25px;
+}
+
+.container-menu nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* slogan */
+.section-titulo{
+}
+.section-titulo h1{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* informações */ 
+.section-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.div-info{
+    width: 800px;
+    height: 300px;
+    border-radius: var(--card-radius);
+    margin: 30px;
+
+}
+.div-info h3{
+    text-align: center;
+}
+.div-center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-hospital{
+   
+    background-color: #ffef00;
+}
+
+.div-clinica{
+  
+    background-color: #abee93;
+}
+
+.div-especialidades{
+    background-color: #00b4fc;
+}
+/* rodapé */
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+
+footer h1{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+footer .div-email p a{
+    color: var(--secundary-color);
+    text-decoration: none;
+}
+#btn-mobile{
+    display: none;
+
+}
+
+/*------------------RESPONSIVIDADE------------------*/
+@media (max-width: 540px){
+    
+ 
+            /* header mobile */
+      .container-menu{
+        justify-content: space-between;
+      }    
+      .container-menu img{
+        width: 180px;
+      }    
+      .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        top: 70px;
+        right: 0px;
+        background-color: var(--primary-color);
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow:hidden;
+     }
+ 
+     #nav.active .menu{
+        height: 100vh;
+        visibility: visible;
+        overflow-y:auto;
+ 
+    }
+    #nav.active .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 1rem 0;
+    }
+    #nav.active .menu li a:hover{
+        color: crimson;
+   
+    }
+ 
+    #btn-mobile{
+         display: flex;
+         padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: var(--secundary-color);
+        margin-right: 30px;
+ 
+    }
+    .hamburger{
+        border-top:2px solid var(--primary-color);
+        width: 20px;
+    }
+ 
+    .hamburger::after,.hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: var(--primary-color);
+        margin-top: 5px;
+        position: relative;
+     }
+
+     #nav.active .hamburger{
+        border-top-color: transparent;
+  }
+    #nav.active .hamburger::before{
+    transform: rotate(135deg);
+  }
+
+  #nav.active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+/* informações */
+.div-info{
+    width: 320px;
+    height: 250px;
+    border-radius: var(--card-radius);
+    margin: 30px;
+    text-align: justify;
+    padding: 10px;
+
+}
+  /* Rodapé */
+  footer h1{
+    font-size: 12px;
+}
+
+footer .div-email p{
+    font-size: 10px;
+}
+}
