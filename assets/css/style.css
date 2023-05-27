@@ -218,119 +218,133 @@ main{
     height: 1px;
     border: 2px solid black;
 }
-.div-cards{
+/* card*/
+.section-card{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+}
+.card-container{
+    
+    width: 900px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
+    margin: 20px;
 
 }
-
-.div-cards .div-card{
-    width: 423px;
-    height: 248px;
-    background-color: var(--secundary-color);
-    border-radius: var(--card-radius);
-    box-shadow: var(--shadow);
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 40px;
-    padding: 25px;
-      
+.card-container:hover , .card-container:hover .button{
+    transition: .3s ease;
+      background-color:  #00285f;
+    color: #fff;
 }
 
-.div-cards .div-card .div-clinica-hospital .div-perfil{
-    border: 2px solid black;
-   min-width: 100px;
-    height: 75px;
-    border-radius: 15px;
+.card-container:hover .btn, .card-container:hover h4,.card-container:hover h3,.card-container:hover p{
+    transition: .4s ease;
+    color: #fff;
 
 }
+.top{
+    height: 100px;
+    border-radius: 6px;
+    background-color:  #00285f;
+    display: flex;
+    justify-content: center;
 
-.div-cards .div-card .div-clinica-hospital .div-perfil .img-foto{
+}
+  /* imagem*/
+.image-container{
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .1s ease;
+    margin-top: 30px;
+    transition: .5s ease;
+
+}
+.image-container img{
+    background-color: #fff;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-
-
-}
-    /* endereço */
-.div-cards .div-card .div-clinica-hospital{
-    display: flex;
-
+    border-radius: 50%;
 }
 
-.div-cards .div-card  h3{
+.image-container img:hover{
+    transform: scale(1.0);
+    margin-bottom: 40px;
+
+} 
+/* endereço e horario */
+.button{
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 60px;
     text-align: center;
 }
-.div-cards .div-card .div-clinica-hospital p{
-    color: black;
-    margin-top: 20px;
-    font-size: 15px;
+
+
+
+.btn{
+    background: none;
+    color: #00285f;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+.btn:hover{
+    border: 1px solid #fff;
 
 }
+   /* nome */
+   .button h3{
+    line-height: .4;
+    font-size: 1.6rem;
+    color: rgba(0, 0,0, .9);
+    margin-bottom: 40px;
+    margin-top: 55px;
 
-.div-cards .div-card .div-clinica-hospital .img-endereco{
-    width: 15px;
-    height: 15px;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 5px;
+}
+    /* hórario e endereço */
 
-}
-    /* hórario */
-.div-cards .div-card .div-horario {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px; 
-}
-
-.div-cards .div-card .div-horario img{
-    width: 16px;
-    height: 16px;
-    margin-right: 2px;
-}
-.div-cards .div-card .div-horario p{
-    color: black;
-    font-size: 14px;
-    margin-left: 2px;
-   
-}
-.div-horario-linha{
-    display: flex;
-}
-.red{
-    color: red;
-}
-
-    /* button ver mais */
-.div-cards .div-card .div-ver-mais{
+    .button p{
+        color: rgba(0, 0,0, .7);
+        margin-top: 50px;
+        font-size: 20px;
+    
+    }
+  /* button ver mais */
+  .div-ver-mais{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
 }
 
-.div-cards .div-card .div-button-ver-mais:hover{
+ .div-button-ver-mais:hover{
     mix-blend-mode: hard-light;
     opacity: 100%;
     cursor: pointer;
 }
 
-.div-cards .div-card .div-ver-mais .div-button-ver-mais{
+ .div-ver-mais .div-button-ver-mais{
    
     width: 150px;
     height: 30px;
     border-radius: var(--button-radius);
     background-color: var(--primary-color);
 }
-.div-cards .div-card .div-ver-mais .div-button-ver-mais-hospitais{   
+ .div-ver-mais .div-button-ver-mais-hospitais{   
     margin-top: 35px;
    
    }
 
-.div-cards .div-card .div-ver-mais .div-button-ver-mais a{
+ .div-ver-mais .div-button-ver-mais a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,6 +354,7 @@ main{
     text-decoration: none;
     font-size: 20px;
 }
+
 /*buttons do catálogo*/
 .div-buttons-catalogo {
     display: flex;
@@ -441,7 +456,8 @@ footer{
 }
 
 
-footer h1{
+footer img{
+    width: 100px;
     margin-right: 25px;
     margin-left: 25px;
 }
@@ -547,30 +563,33 @@ footer .div-email p a{
         margin-bottom: 0px;
        }
        .div-slogan h1{
-        margin-top: 50px;
+        margin-top: 30px;
         text-align: center;
         font-size: 25px;
+        padding: 10px;
        }
        .div-slogan p{
         text-align: center;
         font-size: 20px;
+        margin-top: 10px;
        }
        
        .img-slogan img{
-        width: 193px;
-        height: 155px;
+        width: 200px;
+        height: 200px;
         margin-right: 0px;
+        padding: 10px;
        }
         /* button search */
         .input-search{
        
-            width: 300px;
+            width: 280px;
             height: 60px;
-            border-radius: 12px;
+            border-radius: 17px;
            
         }
         .div-search input{
-            width: 200px;
+            width: 180px;
             height: 30px;
             background-color: #eeeeee;
             border-radius: 8px;
@@ -578,8 +597,7 @@ footer .div-email p a{
         }
        
         .button-search{
-            
-            width: 80px;
+            width: 70px;
             height: 30px;
             
         }
@@ -590,10 +608,10 @@ footer .div-email p a{
         
         }
         .div-search input::placeholder{
-            font-size: 8px;
+            font-size: 10px;
         }
-        /* filtros  */
 
+        /* filtros  */
 
       .div-buttons .div-button{
         width: 105px;
@@ -615,92 +633,77 @@ footer .div-email p a{
 
         
        }
-       .div-buttons .div-button select option{
-          text-align: center;
-
-}
-
+       
         /* catálogo*/
 
         .div-catalogo h2{
             font-size: 13px;
             margin-top: -3px;
         }
-        .div-card h3{
-            margin-top: -8px;
-        }
+       
         .div-linhas .div-linha{
             width: 140px;
             height: 1px;
         }
-       .div-cards .div-card{
-        width: 317px;
-        height: 203px;
-        margin-top: 40px;
-        margin-right: 0px;
-        margin-left: 0px;
-
-        
-       }
-       .div-cards .div-card .div-clinica-hospital .div-perfil{
-        min-width: 60px;
-        height: 60px;
-        border-radius: 15px;
-    
-        }
-        /* endereço */
-
-        .div-cards .div-card  h3{
-            font-size: 15px;
-        }
-        .div-cards .div-card .div-clinica-hospital {
-            width: 100%;
-        }
-
-        .div-cards .div-card .div-clinica-hospital p{
-            margin-top: 13px;
-            font-size: 12px;
-        }
-
-        .div-cards .div-card .div-clinica-hospital .img-endereco{
-            margin-top: 13px;
-        }
-            /* hórario */
-        .div-cards .div-card .div-horario {
-        
-            margin-top: 20px;
-        
-        }
-        .div-cards .div-card .div-horario img{
-      
-            margin-top: -1px;
-        }
-        .div-cards .div-card .div-horario p{
-            font-size: 11px;
        
+        
+        /* card */
+        .card-container{
+    
+            width: 300px;
+            height: 380px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
+            margin: 30px;
+        
         }
-        .div-cards  .div-card .atendimento{
-            margin-top: 50px;
+         /* nome */
+       .button h3{
+            font-size: 18px;
+            margin-bottom: 40px;
+            margin-top: 0px;
         }
-        .div-horario-linha{
-            margin-top: -5px;
+            /* endereço e horario */
 
-        }
+       .button{
+            background-color: #fff;
+            padding: 20px;
+            padding-top: 60px;
+            text-align: center;
+    }
+        .button .btn-margin{
+             margin-top: -12px;
+             
+    }
+        .button p{
+             margin: 35px;
+             font-size: 14px;
+    
+    }
+        /* imagem*/
+        .image-container{
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+
+}
+        .top{
+            height: 60px;
+   
+
+}
+  /* button ver mais */
         
-        /* button ver mais */
-        
-        .div-cards .div-card .div-ver-mais .div-button-ver-mais{   
+        .div-ver-mais .div-button-ver-mais{   
             width: 120px;
             height: 25px;
-            margin-top: -7px;
-        
-        }
 
-        .div-cards .div-card .div-ver-mais .div-button-ver-mais a {
+}
+
+        .div-ver-mais .div-button-ver-mais a {
             font-size: 15px;
-        }
-
-        
+}
         /* buttons do catalógo*/
         .div-buttons-catalogo .buuton-prox-ant{
             width: 73px;
@@ -718,23 +721,23 @@ footer .div-email p a{
 
         /* section about*/
         .section-about{
-          width: 290px;
-          height: 308px;
+            width: 290px;
+            height: 308px;
         }
 
         .section-about h3{
-           margin-top: 12px;
+           margin-top: 25px;
         }
         
         .section-about p{
-            margin-top: -80px;
+            margin-top: -70px;
             margin-bottom: 0px;
             font-size: 13px;
         }
 
         /* Rodapé */
-        footer h1{
-            font-size: 12px;
+        footer img{
+            width: 70px;
         }
 
         footer .div-email p{
