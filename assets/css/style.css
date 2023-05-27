@@ -543,42 +543,42 @@ footer .div-email p a{
         border-top-color: transparent;
   }
     #nav.active .hamburger::before{
-    transform: rotate(135deg);
+        transform: rotate(135deg);
   }
 
   #nav.active .hamburger::after{
-    transform: rotate(-135deg);
-    top: -7px;
+        transform: rotate(-135deg);
+        top: -7px;
 }
 
            /* section slogan */
      
        .section-slogan{
-        flex-direction: column;
-        width: 290px;
-        height: 308px;
+            flex-direction: column;
+            width: 290px;
+            height: 308px;
        }
        .div-slogan{
-        margin-left: 0px;
-        margin-bottom: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
        }
        .div-slogan h1{
-        margin-top: 30px;
-        text-align: center;
-        font-size: 25px;
-        padding: 10px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 25px;
+            padding: 10px;
        }
        .div-slogan p{
-        text-align: center;
-        font-size: 20px;
-        margin-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
        }
        
        .img-slogan img{
-        width: 200px;
-        height: 200px;
-        margin-right: 0px;
-        padding: 10px;
+            width: 200px;
+            height: 200px;
+            margin-right: 0px;
+            padding: 10px;
        }
         /* button search */
         .input-search{
@@ -618,7 +618,6 @@ footer .div-email p a{
         height: 27px;
         margin-right: 5px;
         margin-left: 5px;
-
 
        }
        .div-buttons .div-button a{
@@ -660,9 +659,9 @@ footer .div-email p a{
         }
          /* nome */
        .button h3{
-            font-size: 18px;
+            font-size: 15px;
             margin-bottom: 40px;
-            margin-top: 0px;
+            margin-top: 30px;
         }
             /* endereço e horario */
 
@@ -673,7 +672,7 @@ footer .div-email p a{
             text-align: center;
     }
         .button .btn-margin{
-             margin-top: -12px;
+             margin-top: -40px;
              
     }
         .button p{
