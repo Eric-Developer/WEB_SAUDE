@@ -81,30 +81,7 @@ main{
 }
 
 
-/* rodapé */
-
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: var(--primary-color);
-    color: var(--secundary-color);
-}
-
-footer h1{
-    margin-right: 25px;
-    margin-left: 25px;
-}
-
-footer .div-email p a{
-    color: var(--secundary-color);
-    text-decoration: none;
-}
-
-
- /* section clinica */
+ /* section nome da  clinica */
 
  .section-clinica-hospital{
     flex-direction: column;
@@ -138,133 +115,170 @@ footer .div-email p a{
     align-items: center;
  
  }
- .div-main{
-     display: flex;
-     justify-content: space-around;
-     flex-direction: column;
-     width: 100%;
-     height: 280px;
-     background-color: var(--secundary-color);
-     margin:70px 0px 15px 0px;
-     box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
- }
- .div-main .div-informacao{
-    display: flex;
-    justify-content: space-between;
+ /* card infromações*/
+.card-container{
+    
     width: 100%;
- }
-.div-main  .div-informacao .div-img{
-     width: 100px;
-     height: 100px;
-     border: 2px solid black;
-     margin-left: 15px;
-     margin-top: 20px;
-     border-radius: 15px;
-
- }
- .div-main  .div-informacao .div-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-
- }
- .div-main .div-informacao .div-nome{
+    height: 300px;
+    background-color: var(--secundary-color);
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
+    margin-bottom: 200px;
     margin-top: 50px;
-    margin-right: 100px;
- }
 
- .section-informações .div-main .div-endereco{
+}
+.card-container:hover , .card-container:hover .button{
+    transition: .3s ease;
+    background-color:  var(--primary-color);
+    color: var(--secundary-color);
+}
+
+.card-container:hover .btn, .card-container:hover h4,.card-container:hover h3,.card-container:hover p {
+    transition: .4s ease;
+    color: var(--secundary-color);
+
+}
+
+.top{
+    height: 100px;
+    border-radius: 6px;
+    background-color:  #00285f;
     display: flex;
     justify-content: center;
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
 
- }
- .section-informações .div-main .div-endereco .div-img img{
-    width: 17px;
-    height: 17px;
-    margin-top: 5px;
-    display: flex;
- }
+}
+  /* imagem*/
+.image-container{
+    background-color:var(--secundary-color);
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .1s ease;
+    margin-top: 30px;
+    transition: .5s ease;
 
- .section-informações .div-main .div-endereco p{
-    font-size: 20px;
- }
-.section-informações .div-main hr{
-   margin-bottom: 20px;
-   
-   }
- .section-informações .div-main .div-atalhos ul{
+}
+.image-container img{
+    background-color: var(--secundary-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.image-container img:hover{
+    transform: scale(1.0);
+    margin-bottom: 40px;
+
+} 
+
+.button{
+    background-color: var(--secundary-color);
+    padding: 20px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+
+.btn{
+    background: none;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
+   /* nome */
+   .button h3{
+    line-height: .4;
+    font-size: 1.6rem;
+    color: rgba(0, 0,0, .9);
+    margin-bottom: 40px;
+    margin-top: 55px;
+
+}
+    /*endereço */
+
+    .button p{
+        color: rgba(0, 0,0, .7);
+        margin-top: 50px;
+        font-size: 20px;
+    
+    }
+ /* atalhos */
+ hr{
+    width: 100%;
+    margin-top: 40px;
+}
+.div-atalhos{
+    margin-top: 30px;
+}
+.div-atalhos ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin-bottom: 15px;
+    
    
    }
-.section-informações .div-main .div-atalhos li a{
+ .div-atalhos li a{
     margin: 15px;
     text-decoration: none;
+    color: black;
    
    }
 
-   /* horario */
-.div-main-horario{
-    width: 100%;
-    height: 350px;
-    background-color: var(--secundary-color);
-    margin: 15px;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
-
-}
-.div-main-horario h1{
-    padding: 10px;
-    text-align: center;
-    font-size: 35px;
-    margin-top: 4px;
-}
- .horario{
+.div-atalhos li a:hover{
+    
+    color: var(--secundary-color)
+}   
+ /* horario */
+ .section-horario{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    margin-top: 30px;
-    gap: 60px;
- }
+    
+}
+.horario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    background-color: var(--secundary-color);
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
+}
 
- .horario .div-img img{
+.div-img img{
     width: 150px;
     height: 150px;
-    margin-left: 20px;
-    padding: 5px;
-    margin-bottom: 10px;
-
- }
- .horario .div-horarios{
+}
+.dias{
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    padding: 10px;
-    margin-left: 10px;
-    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
- }
- .horario .div-horarios h2,p{
-    text-align: justify;
-    padding: 2px;
- }
- 
- .horario .div-horarios h2{
-    color: var(--primary-color);
-    font-size: 25px;
- }
- .horario .div-horarios p{
-    font-size: 20px;
- }
- .horario .div-horarios p span{
-    color: red;
- }
+}
+.dia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color:  var(--primary-color);
+    margin: 10px;
+    color: var(--secundary-color);
+    box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
+    border-radius: 15px;
+
+}
  /* sobre */
 .sobre-nos{
     display: flex;
@@ -300,49 +314,56 @@ footer .div-email p a{
 
 }
 /* contato */
-.div-contato{
+.contact-info{
+    display: flex;
     width: 100%;
-    height: 150px;
-    background-color: var(--secundary-color);
-    margin: 50px;
-    box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: 40px;
+  }
 
-}
-
-.div-contato h1{
-    text-align: center;
-    margin-top: 5px;
-}
-.div-img-contatos{
+  .card{
+    background-color: var(--primary-color);
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    margin: 20px;
-    padding: 5px;
-}
+    justify-content: center;
+    align-items: center;
+    color: var(--secundary-color);
+    cursor: pointer;
+  }
 
-.div-img-contatos div img{
-    width: 20px;
-    height: 20px;
-}
-.div-img-telefone p{
-    display: inline;
-    margin-left:10px;
-}
+  .card-icon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+ 
+  .card:hover .card-icon{
+    transform: scale(1.6);
+  }
 
-.div-img-telefone {
-    display: flex;
-    padding: 3px;
-}
+  .card p{
+    margin-top: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
 
-.div-img-instagram{
-    display: flex;
-    margin-top: 20px;
-    padding: 3px;
-}
-.div-img-instagram a{
-    margin-left: 10px;
-}
+  .card:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
 
 /* especialidades */
 .button-especialidades{
@@ -375,9 +396,29 @@ footer .div-email p a{
 }
 
 /* Rodapé */
-footer h1{
-    font-size: 12px;
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
 }
+
+footer h1{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 12px;
+
+}
+
+footer .div-email p a{
+    color: var(--secundary-color);
+    text-decoration: none;
+}
+
 
 footer .div-email p{
     font-size: 10px;
@@ -468,42 +509,76 @@ footer .div-email p{
     position: relative;
 }
 
+/*card */
+ 
+.card-container{
+    width: 100%;
+}
+
+.div-atalhos li a{
+    font-size: 8px;
+}
+
+/* nome */
+.button h3{
+   font-size: 20px;
+
+}
+/* endereço */
+
+.button p{
+    color: rgba(0, 0,0, .7);
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.image-container{
+ width: 130px;
+ height: 130px;
+}
+/* horario */
+.horario{
+    width: 100%;
+    height: 450px;
+}
+.horario .div-img img{
+    width: 130px;
+    height: 130px;
+}
+
+
+.dia{
+    width: 70px;
+    height: 70px;
+
+}
+.dia h3{
+    font-size: 13px;
+}
+ 
+
+    /* sobre */
+.sobre-nos h1{
+    font-size: 25px;
+ }
 .div-sobre-texto p{
     font-size: 13px;
 
 }
 
-.horario .div-img img{
-    width: 100px;
-    height: 100px;
- }
-
- .div-main-horario h1{
-    font-size: 20px;
-}
-
- .horario .div-horarios h2{
-    font-size: 17px;
- }
- .horario .div-horarios p{
-    font-size: 13px;
- }
- .horario{
-    gap: 0;
-    margin-top: 0px;
- }
- .div-main-horario{
-    height: 250px;
- }
-
  .sobre-nos{
     height: 250px;
 }
 
-.sobre-nos h1{
-    font-size: 25px;
- }
-
+ /* contatos*/
+ .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
 }
 @media(min-width:1220px){
 #btn-mobile{
