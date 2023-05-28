@@ -11,8 +11,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
-    <title>Web Saúde</title>
+    <title>Web Saúde - Ver mais</title>
     <link rel="stylesheet" href="/assets/css/VerMais.css">
+    <link rel="shortcut icon" href="/assets/img/logo-icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -36,9 +37,9 @@
     <main>
             <div class="top-atalhos">
                 <ul>
-                    <li> <a href="">Home Page </a>  </li>
+                    <li> <a href="/index.html">Home Page </a>  </li>
                     <li>/</li>
-                    <li> <a href=""> Contatos </a></li>
+                    <li> <a href="#contatos"> Contatos </a></li>
                 </ul>
             </div>
              <!-- nome da clínica -->
@@ -69,8 +70,8 @@
                         <hr>
                                 <div class="div-atalhos">
                                     <ul>
-                                        <li><a class="btn" href="">Sobre</a></li>
-                                        <li><a class="btn" href="">Horário</a></li>
+                                        <li><a class="btn" href="#sobre">Sobre</a></li>
+                                        <li><a class="btn" href="#horario">Horário</a></li>
                                         <li><a class="btn" href="">Especialidades</a></li>
     
     
@@ -80,40 +81,52 @@
                </div>
                 
                 <!-- card de horários-->    
-                <section class="section-horario">
+                <section id="horario" class="section-horario">
                     <div class="horario">
                       <div class="div-img">
                           <img src="/assets/img/—Pngtree—vector clock icon_3773633.png" alt="relógio">
                       </div>
                        <div class="dias">
-                          <div class="dia">
-                              <h3>Segunda</h3>
-                          </div>
-                          <div class="dia">
-                              <h3>Terça</h3>
-                          </div>
-                          <div class="dia">
-                              <h3>Quarta</h3>
-                          </div>
-                          <div class="dia">
-                              <h3>Quinta</h3>
-                          </div>
-                          <div class="dia">
-                              <h3>Sexta</h3>
-                          </div>
-                          <div class="dia">
-                              <h3>Sábado</h3>
-                          </div>
-                          <div class="dia">
-                              <h3>Domingo</h3>
-                          </div>
+                        <details class="dia">
+                            <summary>Segunda</summary>
+                            <p>Abre 07:00</p>
+                            <p>Fecha: 18:00</p>
+                        </details>
+                        <details class="dia">
+                            <summary>Terça</summary>
+                            <p>Abre 07:00</p>
+                            <p>Fecha: 18:00</p>
+                        </details>
+                        <details class="dia">
+                            <summary>Quarta</summary>
+                            <p>Abre 07:00</p>
+                            <p>Fecha: 18:00</p>
+                        </details>
+                        <details class="dia">
+                            <summary>Quinta</summary>
+                            <p>Abre 07:00</p>
+                            <p>Fecha: 18:00</p>
+                        </details>
+                        <details class="dia">
+                            <summary>Sexta</summary>
+                            <p>Abre 07:00</p>
+                            <p>Fecha: 18:00</p>
+                        </details>
+                        <details class="dia">
+                            <summary>Sábado</summary>
+                             <p>Fechado</p>
+                        </details>
+                        <details class="dia">
+                            <summary>Domingo</summary>
+                            <p>Fechado</p>
+                        </details>
                        </div>
                     </div>   
                   </section>
 
                 <!-- card de sobre -->
 
-            <div class="sobre-nos">
+            <div id="sobre" class="sobre-nos">
                 <h1>Sobre nós</h1>
                 <div class="div-sobre-texto">
                 <p>Com mais de 16 anos na área da saúde, somos a maior clínica privada de toda região piauiense. Contamos com amplo espaço de atendimento oferecendo os mais variados tipos de exames laboratoriais e radiológicos, dotadas de aparelhos adquiridos no exterior e produzidos com a mais alta tecnologia disponível na área da saúde.</p>
@@ -122,7 +135,7 @@
 
              <!-- card de contatos -->
 
-             <div class="contact-info">
+             <div id="contatos" class="contact-info">
                 <div class="card">
                   <img src="/assets/img/envelope-regular.svg" alt="email" class="card-icon">
           
@@ -143,17 +156,23 @@
               </div>
             </section>
           
+            <div  class="button-especialidades">
+                <details>
+                    <summary>Especialidades</summary>
+                </details>
+            </div>
+
         <div id="mapa" class="div-mapa"></div>
 
     </main>
 
     <footer>
-        <h1>Web Saúde</h1>
+        <img src="/assets/img/logo.png" alt="logo">
         <div class="div-email">
             <p>Entre em Contato</p>
             <p><a href="#">Email</a></p>
         </div>
-        <h1>Web Saúde</h1>
+        <img src="/assets/img/logo.png" alt="logo">
     </footer>
 
     <script src="/assets/js/app.js"></script>

@@ -30,7 +30,7 @@ body{
     position: fixed;
     width: 100%;
     height: 6rem;
-    background-color: #00285f;
+    background-color:var(--primary-color);
     z-index: 1000;
 }
 .container-menu img{
@@ -97,9 +97,8 @@ main{
 }
 .top-atalhos li a{
     text-decoration: none;
-    font-weight: bold;
     margin: 5px;
-    color: black;
+    color: var(--primary-color);
     font-size: 20px;
 }
 .top-atalhos li a:hover{
@@ -235,7 +234,7 @@ main{
         font-size: 20px;
     
     }
- /* atalhos */
+    /* atalhos */
  hr{
     width: 100%;
     margin-top: 40px;
@@ -305,6 +304,23 @@ main{
     border-radius: 15px;
 
 }
+.dia summary{
+    position: relative;
+    text-align: center;
+    top: 5px;
+}
+.dia p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+    font-size: 14px;
+}
+.dia:hover{
+    mix-blend-mode: hard-light;
+    opacity: 100%;
+    cursor: pointer;
+}
  /* sobre */
 .sobre-nos{
     display: flex;
@@ -312,7 +328,7 @@ main{
     width: 930px;
     height: 350px;
     background-color: var(--secundary-color);
-    margin: 20px;
+    margin: 60px;
     box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
     justify-content: space-between;
 
@@ -366,15 +382,16 @@ main{
   }
 
   .card-icon{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     text-align: center;
     border-radius: 50%;
     transition: 0.3s linear;
+    filter:invert(1);
   }
  
   .card:hover .card-icon{
-    transform: scale(1.6);
+    transform: scale(1.3);
   }
 
   .card p{
@@ -391,24 +408,20 @@ main{
     opacity: 1;
   }
 
-/* especialidades */
+/* button  especialidades */
 .button-especialidades{
     width: 150px;
     height: 38px;
     border-radius: var(--button-radius);
     background-color: var(--primary-color);
+    margin-top: 20px;
 
 }
-.button-especialidades a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: var(--secundary-color);
-    height: 100%;
-    text-decoration: none;
-    padding: 10px;
 
+.button-especialidades details summary{
+    color:var(--secundary-color);
+    text-align: center;
+    margin-top: 10px;
 }
 /* mapa */
 .div-mapa{
@@ -433,11 +446,10 @@ footer{
     color: var(--secundary-color);
 }
 
-footer h1{
+footer img{
+    width: 100px;
     margin-right: 25px;
     margin-left: 25px;
-    font-size: 12px;
-
 }
 
 footer .div-email p a{
@@ -521,13 +533,13 @@ footer .div-email p{
      #nav.active .hamburger{
         border-top-color: transparent;
      }
-    #nav.active .hamburger::before{
-    transform: rotate(135deg);
+     #nav.active .hamburger::before{
+        transform: rotate(135deg);
   }
 
-  #nav.active .hamburger::after{
-    transform: rotate(-135deg);
-    top: -7px;
+    #nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
 }
 
     .top-atalhos li a{
@@ -583,11 +595,16 @@ footer .div-email p{
 
 
     .dia{
-        width: 70px;
-        height: 70px;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        bottom: 10px;
 
     }
-    .dia h3{
+    .dia summary{
+        font-size: 13px;
+    }
+    .dia p{
         font-size: 13px;
     }
     
@@ -616,6 +633,11 @@ footer .div-email p{
         max-width: 300px;
         margin: 10px 0;
     }
+    footer img{
+        width: 70px;
+       
+    }
+    
     }
     @media(min-width:1220px){
     #btn-mobile{
