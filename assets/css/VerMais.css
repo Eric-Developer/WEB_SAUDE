@@ -47,7 +47,7 @@ body{
     background-color: var(--primary-color);
     border-radius: var(--card-radius);
     box-shadow: var(--shadow);
-    margin-top: 120px;
+    margin-top: 20px;
 }
 .div-clinica-hospital h1{
     color: var(--secundary-color);
@@ -79,27 +79,54 @@ main{
     align-items: center;
     justify-content: space-between;
 }
+.top-atalhos{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 120px;
+}
+
+.top-atalhos ul{
+    display: flex;
+    margin-left: 20px;
+
+    
+}
+.top-atalhos li{
+    list-style: none;
+}
+.top-atalhos li a{
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    color: black;
+    font-size: 20px;
+}
+.top-atalhos li a:hover{
+    text-decoration: underline;
+    
+}
 
 
  /* section nome da  clinica */
 
- .section-clinica-hospital{
+.section-clinica-hospital{
     flex-direction: column;
     width: 290px;
     height: 308px;
    }
-   .div-clinica-hospital{
+.div-clinica-hospital{
     margin-left: 0px;
     margin-bottom: 0px;
    }
-   .div-clinica-hospital h1{
+.div-clinica-hospital h1{
     margin-top: 50px;
     text-align: center;
     font-size: 25px;
    }
 
    
-   .img-clinica-hospital img{
+.img-clinica-hospital img{
     width: 193px;
     height: 155px;
     margin-right: 0px;
@@ -118,7 +145,7 @@ main{
  /* card infromações*/
 .card-container{
     
-    width: 100%;
+    width: 930px;
     height: 300px;
     background-color: var(--secundary-color);
     border-radius: 6px;
@@ -237,14 +264,13 @@ main{
 }   
  /* horario */
  .section-horario{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .horario{
-    width: 100%;
+    width: 930px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,7 +309,7 @@ main{
 .sobre-nos{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 930px;
     height: 350px;
     background-color: var(--secundary-color);
     margin: 20px;
@@ -494,7 +520,7 @@ footer .div-email p{
 
      #nav.active .hamburger{
         border-top-color: transparent;
-  }
+     }
     #nav.active .hamburger::before{
     transform: rotate(135deg);
   }
@@ -504,120 +530,129 @@ footer .div-email p{
     top: -7px;
 }
 
-.div-mapa{
-    width: 90%;
-    position: relative;
+    .top-atalhos li a{
+  
+         font-size: 17px;
 }
 
-/*card */
- 
-.card-container{
-    width: 100%;
-}
+    .div-mapa{
+        width: 90%;
+        position: relative;
+    }
 
-.div-atalhos li a{
-    font-size: 8px;
-}
+    /*card */
+    
+    .card-container{
+        width: 100%;
+    }
 
-/* nome */
-.button h3{
-   font-size: 20px;
+    .div-atalhos li a{
+        font-size: 12px;
+    }
+    
+    .div-atalhos li a:hover{
+        text-decoration: underline;
+    }
 
-}
-/* endereço */
+    /* nome */
+    .button h3{
+    font-size: 20px;
 
-.button p{
-    color: rgba(0, 0,0, .7);
-    margin-top: 50px;
-    font-size: 16px;
-}
+    }
+    /* endereço */
 
-.image-container{
- width: 130px;
- height: 130px;
-}
-/* horario */
-.horario{
-    width: 100%;
-    height: 450px;
-}
-.horario .div-img img{
+    .button p{
+        color: rgba(0, 0,0, .7);
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    .image-container{
     width: 130px;
     height: 130px;
-}
+    }
+    /* horario */
+    .horario{
+        width: 100%;
+        height: 450px;
+    }
+    .horario .div-img img{
+        width: 130px;
+        height: 130px;
+    }
 
 
-.dia{
-    width: 70px;
-    height: 70px;
+    .dia{
+        width: 70px;
+        height: 70px;
 
-}
-.dia h3{
-    font-size: 13px;
-}
- 
+    }
+    .dia h3{
+        font-size: 13px;
+    }
+    
 
-    /* sobre */
-.sobre-nos h1{
-    font-size: 25px;
- }
-.div-sobre-texto p{
-    font-size: 13px;
+        /* sobre */
+    .sobre-nos h1{
+        font-size: 25px;
+    }
+    .div-sobre-texto p{
+        font-size: 13px;
 
-}
+    }
 
- .sobre-nos{
-    height: 250px;
-}
+    .sobre-nos{
+        width: 100%;
+        height: 250px;
+        margin-top: 40px;
+    }
 
- /* contatos*/
- .contact-info{
-    flex-direction: column;
-  }
-  .card{
-    width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
-  }
-}
-@media(min-width:1220px){
-#btn-mobile{
-    display: none;
-}
-nav{
-    display: block;
-}
+    /* contatos*/
+    .contact-info{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+    }
+    @media(min-width:1220px){
+    #btn-mobile{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
 
-.section-clinica-hospital {
-    width: 690px;
-    height: 357px;
-}
+    .section-clinica-hospital {
+        width: 690px;
+        height: 357px;
+    }
 
-.div-clinica-hospital h1{
-    font-size: 3rem;
-    margin-bottom: 15px;
+    .div-clinica-hospital h1{
+        font-size: 3rem;
+        margin-bottom: 15px;
 
-}
+    }
 
-.div-div-clinica-hospital{
-    margin-left: 50px;
-}
-.img-clinica-hospital img{
-    width: 263.04px;
-    height: 203.61px;
-    margin-right: 30px;
-}
+    .div-div-clinica-hospital{
+        margin-left: 50px;
+    }
+    .img-clinica-hospital img{
+        width: 263.04px;
+        height: 203.61px;
+        margin-right: 30px;
+    }
 
-/* section informações */
+    /* section informações */
 
-
-
-.section-informações{
-    width: 60%;
-   
- }
-.div-endereco .div-img img{
-    width: 50px;
-    height: 50px;
-}
-}
+    .section-informações{
+        width: 60%;
+    
+    }
+    .div-endereco .div-img img{
+        width: 50px;
+        height: 50px;
+    }
+    }

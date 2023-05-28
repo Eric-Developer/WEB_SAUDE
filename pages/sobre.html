@@ -77,40 +77,14 @@
             </section>
             </main>
                 <footer>
-                    <h1>Web Saúde</h1>
+                    <img src="/assets/img/logo.png" alt="Logo">
                     <div class="div-email">
                     <p>Entre em Contato</p>
                     <p><a href="#">Email</a></p>
                     </div>
-                    <h1>Web Saúde</h1>
+                    <img src="/assets/img/logo.png" alt="Logo">
+
                 </footer>
-                <script>
-                    function clickMenu(){
-                if(itens.style.display == 'block'){
-                itens.style.display = 'none';
-                }
-               else{
-                itens.style.display = 'block';
-               }
-            
-                    }
-            
-                    const btnMobile = document.getElementById('btn-mobile');
-            
-            function toggleMenu(event){
-                if(event.type === 'touchstart'){
-                    event.preventDefault();
-                const nav = document.getElementById('nav');
-                nav.classList.toggle('active');
-                constactive = nav.classList.contains('active')
-                }
-             
-            }
-            
-            
-            btnMobile.addEventListener('click',toggleMenu);
-            btnMobile.addEventListener('touchstart',toggleMenu);
-            
-                </script>
+            <script src="/assets/js/app.js"></script>
 </body>
 </html>

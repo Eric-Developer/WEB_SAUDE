@@ -59,8 +59,7 @@ body{
     text-decoration: underline;
 }
 
-/* slogan */
-
+/* principal */
 main{
     display: flex;
     flex-direction: column;
@@ -73,8 +72,10 @@ main{
     font-size: 35px;
 }
 .section-titulo h2 , p{
+    text-align: justify;
     margin-top: 20px;
     margin-left: 10px;
+    margin-right: 25px;
 }
 /* informações */ 
 .section-info{
@@ -94,7 +95,6 @@ main{
 }
 .div-info h3{
     text-align: center;
-    margin-bottom: -15px;
 }
 .div-center{
     width: 100%;
@@ -115,6 +115,8 @@ main{
 
 .div-especialidades{
     background-color: #00b4fc;
+    margin-bottom: 100px;
+
 }
 
 
@@ -131,7 +133,8 @@ footer{
 }
 
 
-footer h1{
+footer img{
+    width: 100px;
     margin-right: 25px;
     margin-left: 25px;
 }
@@ -231,8 +234,8 @@ footer .div-email p a{
    
 }
   /* Rodapé */
-  footer h1{
-    font-size: 12px;
+  footer img{
+    width: 70px;
 }
 
 footer .div-email p{

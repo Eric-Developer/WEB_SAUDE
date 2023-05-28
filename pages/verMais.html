@@ -32,10 +32,17 @@
         </nav>
 
     </header>
-
+     
     <main>
+            <div class="top-atalhos">
+                <ul>
+                    <li> <a href="">Home Page </a>  </li>
+                    <li>/</li>
+                    <li> <a href=""> Contatos </a></li>
+                </ul>
+            </div>
              <!-- nome da clínica -->
-
+         
         <section class="section-clinica-hospital">
             <div class="div-clinica-hospital">
                 <h1>Clinica Medcenter</h1>
@@ -64,7 +71,6 @@
                                     <ul>
                                         <li><a class="btn" href="">Sobre</a></li>
                                         <li><a class="btn" href="">Horário</a></li>
-                                        <li><a class="btn" href="">Contato</a></li>
                                         <li><a class="btn" href="">Especialidades</a></li>
     
     
@@ -150,44 +156,7 @@
         <h1>Web Saúde</h1>
     </footer>
 
-    <script>
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none';
-            }
-            else {
-                itens.style.display = 'block';
-            }
-
-        }
-
-        const btnMobile = document.getElementById('btn-mobile');
-
-        function toggleMenu(event) {
-            if (event.type === 'touchstart') {
-                event.preventDefault();
-                const nav = document.getElementById('nav');
-                nav.classList.toggle('active');
-                constactive = nav.classList.contains('active')
-            }
-
-        }
-
-
-        btnMobile.addEventListener('click', toggleMenu);
-        btnMobile.addEventListener('touchstart', toggleMenu);
-
-        //Script do mapa
-        var map = L.map('mapa').setView([-7.08484,-41.47252], 20);
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([-7.08484,-41.47252]).addTo(map)
-            .bindPopup('Localização')
-            .openPopup();
-    </script>
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>
