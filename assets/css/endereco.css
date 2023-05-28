@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+
+:root{
+  --primary-color: #00285f;
+  --secundary-color:#f9f9f1;
+  --button-radius:15px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ropa sans', serif,Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: #eeeeee;
+    
+} 
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    background-color: var(--primary-color);
+
+}
+.div-home a{
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 20px;
+}
+.div-titulo h1{
+    color: var(--secundary-color);
+    margin-top: 40px;
+}
+.div-home a:hover{
+    text-decoration: underline;
+}
+.div-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div-inputs input{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid var(--secundary-color);
+    background-color: transparent;
+    margin: 20px;
+    outline: none;
+
+}
+.div-inputs input::placeholder{
+    color: #eeeeee;
+    position: absolute;
+    left:10px;
+
+}
+.div-campos{
+    margin: 7px;
+}
+.div-button button{
+    width: 170px;
+    height: 30px;
+    border-radius: var(--button-radius);
+    background-color: var(--secundary-color);
+    color: black;
+}
+
+.div-button button:hover{
+    mix-blend-mode: hard-light;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+@media (max-width:540px){
+    .container{
+      
+        width: 100%;
+    
+    }
+}
