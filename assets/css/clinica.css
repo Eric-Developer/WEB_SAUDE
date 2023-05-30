@@ -14,7 +14,6 @@
 
 }
 
-
 main{background-color: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -32,7 +31,7 @@ main{background-color: var(--primary-color);
 .section-form a{
     color: var(--secundary-color);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
 }
 .section-form a:hover{
     text-decoration: underline;

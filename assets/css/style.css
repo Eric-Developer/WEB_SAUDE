@@ -34,7 +34,28 @@ body{
     background-color: var(--primary-color);
     z-index: 1000;
 }
+    /* button de login */
 
+.button-entrar{
+    width: 100px;
+    height: 20px;
+    background-color: var(--secundary-color);
+    border-radius: var(--button-radius);
+}
+ .button-entrar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+    
+}
+.button-entrar:hover{
+    mix-blend-mode: hard-light;
+    opacity: 100%;
+    cursor: pointer;   
+}
 .container-menu a{
     text-decoration: none;
 }
@@ -68,7 +89,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
-
+ /* alogan */
 .section-slogan{
     display: flex;
     justify-content: space-between;
@@ -79,6 +100,9 @@ main{
     border-radius: var(--card-radius);
     box-shadow: var(--shadow);
     margin-top: 120px;
+}
+.div-slogan h1{
+    font-size: 35px;
 }
 .div-slogan h1, .div-slogan p{
     color: var(--secundary-color);
@@ -549,6 +573,20 @@ footer .div-email p a{
         transform: rotate(-135deg);
         top: -7px;
     }
+
+     /* button de login */
+
+        .button-entrar{
+            width: 80px;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+        .button-entrar a{
+            
+           font-size: 12px;
+            
+            }
 
            /* section slogan */
      

@@ -32,7 +32,7 @@ main{
 .section-form a{
     color: var(--secundary-color);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
 }
 .section-form a:hover{
     text-decoration: underline;

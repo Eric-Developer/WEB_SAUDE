@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="página inicial">
     <title>Web Saúde - Home</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/img/logo-icon.png" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
-    <meta name="description" content="página inicial">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="PWA Workshop">
-    <meta name="apple-mobile-web-app-title" content="PWA Workshop">
+   
 
 </head>
 <body>
@@ -22,10 +19,11 @@
     </div>
 
         <nav id="nav">
-            <button id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu">
+            <button id="btn-mobile">
                 <span class="hamburger"></span>
               </button>
                 <ul class="menu"id="menu">
+                    <div class="button-entrar"><a href="/pages/login.html">ENTRAR</a></div>
                     <li><a href="/index.html">HOME</a></li>
                     <li><a href="/pages/sobre.html">SOBRE</a></li>
                 </ul>
@@ -273,8 +271,10 @@
         </div>
         <img src="/assets/img/logo.png" alt="logo">
     </footer>
-    <script src="/assets/js/app.js">
-        
+
+    <script src="./assets/js/app.js">
     </script>
+    <script src="/assets/js/index.js"></script>
+
 </body>
 </html>

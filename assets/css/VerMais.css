@@ -33,6 +33,28 @@ body{
     background-color:var(--primary-color);
     z-index: 1000;
 }
+ /* button de login */
+
+ .button-entrar{
+    width: 100px;
+    height: 20px;
+    background-color: var(--secundary-color);
+    border-radius: var(--button-radius);
+}
+ .button-entrar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+    
+}
+.button-entrar:hover{
+    mix-blend-mode: hard-light;
+    opacity: 100%;
+    cursor: pointer;   
+}
 .container-menu img{
     width: 100px;
 }
@@ -79,6 +101,7 @@ main{
     align-items: center;
     justify-content: space-between;
 }
+/* atalhos */
 .top-atalhos{
     width: 100%;
     display: flex;
@@ -257,10 +280,7 @@ main{
    
    }
 
-.div-atalhos li a:hover{
-    
-    color: var(--secundary-color)
-}   
+  
  /* horario */
  .section-horario{
     display: flex;
@@ -363,7 +383,6 @@ main{
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-    margin-top: 40px;
   }
 
   .card{
@@ -541,12 +560,33 @@ footer .div-email p{
         transform: rotate(-135deg);
         top: -7px;
 }
+            /* button de login */
 
-    .top-atalhos li a{
-  
-         font-size: 17px;
-}
+            .button-entrar{
+                width: 80px;
+                height: 30px;
+                margin-left: 15px;
+                margin-top: 30px;
+            }
+            .button-entrar a{
+                
+            font-size: 12px;
+                
+                }
+               
+        /* atalhos */
+        
+        .top-atalhos{
+           
+            justify-content: center;
+        }
 
+        .top-atalhos ul{
+            margin-left: 0px;
+        }
+        .top-atalhos li a{
+            font-size: 18px;
+        }
     .div-mapa{
         width: 90%;
         position: relative;

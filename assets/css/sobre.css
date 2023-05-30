@@ -34,7 +34,28 @@ body{
     background-color: #00285f;
     z-index: 1000;
 }
+ /* button de login */
 
+ .button-entrar{
+    width: 100px;
+    height: 20px;
+    background-color: var(--secundary-color);
+    border-radius: var(--button-radius);
+}
+ .button-entrar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+    
+}
+.button-entrar:hover{
+    mix-blend-mode: hard-light;
+    opacity: 100%;
+    cursor: pointer;   
+}
 .container-menu a{
     text-decoration: none;
 }
@@ -226,19 +247,31 @@ footer .div-email p a{
     transform: rotate(-135deg);
     top: -7px;
 }
+        /* button de login */
 
-/* informações */
-.div-info{
-    width: 320px;
-    height: 250px;
-   
-}
-  /* Rodapé */
-  footer img{
-    width: 70px;
-}
+        .button-entrar{
+            width: 80px;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+        .button-entrar a{
+            
+        font-size: 12px;
+            
+            }
+        /* informações */
+        .div-info{
+            width: 320px;
+            height: 250px;
+        
+        }
+        /* Rodapé */
+        footer img{
+            width: 70px;
+        }
 
-footer .div-email p{
-    font-size: 10px;
-}
-}
+        footer .div-email p{
+            font-size: 10px;
+        }
+        }

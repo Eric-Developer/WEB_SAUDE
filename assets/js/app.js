@@ -7,9 +7,9 @@
     itens.style.display = 'block';
    }
 
-        }
+    }
 
-        const btnMobile = document.getElementById('btn-mobile');
+const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event){
     if(event.type === 'touchstart'){
@@ -21,10 +21,9 @@ function toggleMenu(event){
  
 }
 
-      
+
 btnMobile.addEventListener('click',toggleMenu);
 btnMobile.addEventListener('touchstart',toggleMenu);
-
 
  //Script do mapa
  var map = L.map('mapa').setView([-7.08484,-41.47252], 20);
