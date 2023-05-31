@@ -10,6 +10,7 @@
 
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+
   }
 *{
     padding: 0;
@@ -350,7 +351,7 @@ main{
 }
 
  .div-button-ver-mais:hover{
-    mix-blend-mode: hard-light;
+    background-color: var(--secundary-color);
     opacity: 100%;
     cursor: pointer;
 }
@@ -593,8 +594,10 @@ footer .div-email p a{
      
        .section-slogan{
             flex-direction: column;
-            width: 350px;
-            height: 330px;
+            width: 300px;
+            height: 310px;
+            position: relative;
+
        }
        .div-slogan{
             margin-left: 0px;
@@ -785,18 +788,18 @@ footer .div-email p a{
         }
 }
 
-        @media (max-width: 450px){
+    @media (max-width: 450px){
             /* slogamn */
 
-            .section-slogan{
-                width: 250px;
-        }
+            
             .div-linhas .div-linha{
                 width: 100px;
             }
         }
 @media (max-width: 350px){
-
+        .section-slogan{
+             width: 250px;
+            }
   
         .div-linhas .div-linha{
             width: 70px;

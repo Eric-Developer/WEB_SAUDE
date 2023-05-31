@@ -135,7 +135,7 @@ main{
 
 .section-clinica-hospital{
     flex-direction: column;
-    width: 290px;
+    width: 600px;
     height: 308px;
    }
 .div-clinica-hospital{
@@ -483,6 +483,10 @@ footer .div-email p{
     font-size: 10px;
 }
 
+#btn-mobile{
+    display: none;
+}
+
 /*------------------RESPONSIVIDADE------------------*/
 
 @media(max-width:768px){
@@ -593,7 +597,12 @@ footer .div-email p{
         width: 90%;
         position: relative;
         }
-
+    .section-clinica-hospital{
+        flex-direction: column;
+        width: 290px;
+         height: 308px;
+     }
+     
     /*card */
     
     .card-container{
@@ -801,11 +810,18 @@ footer .div-email p{
         margin-left: 15px;
         margin-top: 30px;
     }
+     /* atalhos */
+
+     .top-atalhos{
+        
+        justify-content: center;
+        }
+
     .card-container{
         width: 700px;
 
     }
-    /* section nome da  clinica */
+    /* section nome da clinica */
 
     .section-clinica-hospital{
         justify-content: center;

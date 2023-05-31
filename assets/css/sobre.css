@@ -170,7 +170,7 @@ footer .div-email p a{
 }
 
 /*------------------RESPONSIVIDADE------------------*/
-@media (max-width: 540px){
+@media (max-width: 768px){
     
  
         /* header mobile */
@@ -365,7 +365,8 @@ footer .div-email p a{
     #nav.active .hamburger::after{
         transform: rotate(-135deg);
         top: -7px;
-}
+    
+    }   
         /* button de login */
 
         .button-entrar{
