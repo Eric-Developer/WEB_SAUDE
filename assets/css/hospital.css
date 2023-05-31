@@ -90,9 +90,18 @@ label{
 }
 input{
     outline: none;
+    color: var(--secundary-color);
 }
 input::placeholder{
     position: absolute;
     top: 5px;
     left: 5px;
+}
+
+@media (min-width:0px) and  (max-width:992px){
+    .div-formulario{
+    
+        height:80%;
+        gap: 30px;
+    }
 }

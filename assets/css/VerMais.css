@@ -33,6 +33,7 @@ body{
     background-color:var(--primary-color);
     z-index: 1000;
 }
+
  /* button de login */
 
  .button-entrar{
@@ -141,6 +142,7 @@ main{
     margin-left: 0px;
     margin-bottom: 0px;
    }
+
 .div-clinica-hospital h1{
     margin-top: 50px;
     text-align: center;
@@ -483,7 +485,7 @@ footer .div-email p{
 
 /*------------------RESPONSIVIDADE------------------*/
 
-@media(max-width:540px){
+@media(max-width:768px){
     
     
      /* header mobile */
@@ -554,43 +556,43 @@ footer .div-email p{
      }
      #nav.active .hamburger::before{
         transform: rotate(135deg);
-  }
+     }
 
     #nav.active .hamburger::after{
         transform: rotate(-135deg);
         top: -7px;
-}
-            /* button de login */
+        }
+    /* button de login */
 
-            .button-entrar{
-                width: 80px;
-                height: 30px;
-                margin-left: 15px;
-                margin-top: 30px;
-            }
-            .button-entrar a{
-                
-            font-size: 12px;
-                
-                }
-               
-        /* atalhos */
+    .button-entrar{
+        width: 80px;
+        height: 30px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    .button-entrar a{
         
-        .top-atalhos{
-           
-            justify-content: center;
+    font-size: 12px;
+        
+        }
+        
+        /* atalhos */
+
+    .top-atalhos{
+        
+        justify-content: center;
         }
 
-        .top-atalhos ul{
+    .top-atalhos ul{
             margin-left: 0px;
         }
-        .top-atalhos li a{
+    .top-atalhos li a{
             font-size: 18px;
         }
     .div-mapa{
         width: 90%;
         position: relative;
-    }
+        }
 
     /*card */
     
@@ -648,7 +650,6 @@ footer .div-email p{
         font-size: 13px;
     }
     
-
         /* sobre */
     .sobre-nos h1{
         font-size: 25px;
@@ -679,42 +680,165 @@ footer .div-email p{
     }
     
     }
-    @media(min-width:1220px){
+    @media(max-width:355px){
+
+        /* section nome da  clinica */
+
+        .section-clinica-hospital{
+            width: 240px;
+        }
+        /* card */
+        .div-atalhos li a{
+            font-size: 7px;
+        }
+                /* horario */
+        .horario{
+            height: 500px;
+        }
+        .horario .div-img img{
+            width: 110px;
+            height: 110px;
+        }
+
+
+        .dia{
+            width: 70px;
+            height: 70px;
+
+        }
+        .dia summary{
+            font-size: 9px;
+        }
+        .dia p{
+            font-size: 9px;
+        }
+           /* Rodapé */
+           footer img{
+            width: 40px;
+        }
+   
+    }
+
+   
+    @media (min-width:768px) and  (max-width:992px){
+    /* header mobile */
+    .container-menu{
+        justify-content: space-between;
+    }    
+    .container-menu  img{
+        width: 70px;
+        margin-left: 20px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        top: 70px;
+        right: 0px;
+        background-color: var(--primary-color);
+        z-index: 1000000;
+        height: 0px;
+        visibility: hidden;
+        overflow:hidden;
+    }
+
+    #nav.active .menu{
+        height: 100vh;
+        visibility: visible;
+        overflow-y:auto;
+
+    }
+    #nav.active .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 1rem 0;
+    }
+    #nav.active .menu li a:hover{
+        color: crimson;
+
+    }
+
     #btn-mobile{
-        display: none;
-    }
-    nav{
-        display: block;
-    }
-
-    .section-clinica-hospital {
-        width: 690px;
-        height: 357px;
-    }
-
-    .div-clinica-hospital h1{
-        font-size: 3rem;
-        margin-bottom: 15px;
-
-    }
-
-    .div-div-clinica-hospital{
-        margin-left: 50px;
-    }
-    .img-clinica-hospital img{
-        width: 263.04px;
-        height: 203.61px;
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: var(--secundary-color);
         margin-right: 30px;
+
+    }
+    .hamburger{
+        border-top:2px solid var(--primary-color);
+        width: 20px;
     }
 
-    /* section informações */
+    .hamburger::after,.hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: var(--primary-color);
+        margin-top: 5px;
+        position: relative;
+    }
 
-    .section-informações{
-        width: 60%;
+    #nav.active .hamburger{
+        border-top-color: transparent;
+    }
+    #nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+        }
+    .button-entrar{
+        width: 80px;
+        height: 30px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+    .card-container{
+        width: 700px;
+
+    }
+    /* section nome da  clinica */
+
+    .section-clinica-hospital{
+        justify-content: center;
+        width: 750px;
+        height: 400px;
+    }
+    .div-clinica-hospital h1{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 40px;
+       }
     
+       
+    .img-clinica-hospital img{
+        width: 230px;
+        height: 230px;
+       }
+    /* horario */
+    .horario{
+        width: 700px;
+        height: 450px;
+       }
+    /* sobre */
+    .sobre-nos{
+        width: 700px;
     }
-    .div-endereco .div-img img{
-        width: 50px;
-        height: 50px;
+    /* contato */
+    .card{
+
+        width: 200px;
     }
+    .card-icon{
+        width: 100px;
     }
+}
+    

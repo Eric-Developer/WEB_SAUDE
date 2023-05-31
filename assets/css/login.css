@@ -54,6 +54,8 @@ body{
     background-color: transparent;
     margin: 20px;
     outline: none;
+    color: var(--secundary-color);
+
 
 }
 .div-inputs input::placeholder{

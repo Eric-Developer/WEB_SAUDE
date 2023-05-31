@@ -236,16 +236,16 @@ footer .div-email p a{
         position: relative;
      }
 
-     #nav.active .hamburger{
-        border-top-color: transparent;
-  }
-    #nav.active .hamburger::before{
-    transform: rotate(135deg);
-  }
+        #nav.active .hamburger{
+            border-top-color: transparent;
+    }
+        #nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
 
-  #nav.active .hamburger::after{
-    transform: rotate(-135deg);
-    top: -7px;
+    #nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
 }
         /* button de login */
 
@@ -275,3 +275,115 @@ footer .div-email p a{
             font-size: 10px;
         }
         }
+
+        @media (max-width: 330px){
+            /* Rodapé */
+            footer img{
+                width: 40px;
+            }
+            footer .div-email p{
+                font-size: 10px;
+        }
+        .div-info{
+            width: 90%;
+            height: 300px;
+           
+        }
+    }
+
+    @media (min-width:768px) and  (max-width:992px){
+          /* header mobile */
+     .container-menu{
+        justify-content: space-between;
+      }    
+      .container-menu  img{
+        width: 80px;
+        margin-left: 20px;
+    }
+     .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        top: 70px;
+        right: 0px;
+        background-color: var(--primary-color);
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow:hidden;
+     }
+ 
+     #nav.active .menu{
+        height: 100vh;
+        visibility: visible;
+        overflow-y:auto;
+ 
+    }
+    #nav.active .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 1rem 0;
+    }
+    #nav.active .menu li a:hover{
+        color: crimson;
+   
+    }
+ 
+    #btn-mobile{
+         display: flex;
+         padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: var(--secundary-color);
+        margin-right: 30px;
+ 
+    }
+    .hamburger{
+        border-top:2px solid var(--primary-color);
+        width: 20px;
+    }
+ 
+    .hamburger::after,.hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: var(--primary-color);
+        margin-top: 5px;
+        position: relative;
+     }
+
+        #nav.active .hamburger{
+            border-top-color: transparent;
+    }
+        #nav.active .hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+}
+        /* button de login */
+
+        .button-entrar{
+            width: 80px;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+        .button-entrar a{
+            
+        font-size: 12px;
+            
+            }
+
+          /* informações */
+        .div-info{
+            width: 80%;
+            height: 250px;
+        
+        }
+    }
