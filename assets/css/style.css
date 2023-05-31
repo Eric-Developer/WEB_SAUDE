@@ -593,8 +593,8 @@ footer .div-email p a{
      
        .section-slogan{
             flex-direction: column;
-            width: 290px;
-            height: 308px;
+            width: 350px;
+            height: 330px;
        }
        .div-slogan{
             margin-left: 0px;
@@ -613,10 +613,11 @@ footer .div-email p a{
        }
        
        .img-slogan img{
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             margin-right: 0px;
             padding: 10px;
+            margin-bottom: 15px;
        }
         /* button search */
         .input-search{
