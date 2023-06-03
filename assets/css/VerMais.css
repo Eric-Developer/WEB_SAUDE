@@ -485,14 +485,85 @@ main{
 
 /* Rodapé */
 
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: var(--primary-color);
-    color: var(--secundary-color);
+.footer-distributed{
+	background: var(--primary-color);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align:middle
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+
+}
+.footer-distributed .footer-left p{
+ color: var(--secundary-color);
+    
+}
+
+/*  logo */
+
+.footer-distributed h3{
+	color:  var(--secundary-color);
+    margin-bottom: 5px;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  var(--secundary-color);
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 23%;
+}
+
+.footer-distributed .footer-right p{
+	color: white;
+    margin-top: 20px;
+
 }
 
 footer img{
@@ -500,21 +571,10 @@ footer img{
     margin-right: 25px;
     margin-left: 25px;
 }
-
-footer .div-email p a{
-    color: var(--secundary-color);
-    text-decoration: none;
-}
-
-
-footer .div-email p{
-    font-size: 10px;
-}
-
 #btn-mobile{
     display: none;
-}
 
+}
 /*------------------RESPONSIVIDADE------------------*/
 
 @media(max-width:768px){
@@ -716,10 +776,17 @@ footer .div-email p{
      .popup{
         width: 300px;
      }
-    footer img{
-        width: 70px;
-       
+    /* Rodapé */
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
     }
+
     
     }
     @media(max-width:355px){
@@ -757,12 +824,7 @@ footer .div-email p{
         .popup{
         width: 250px;
         }
-           /* Rodapé */
-           footer img{
-            width: 40px;
-        }
-
-   
+        
     }
 
    

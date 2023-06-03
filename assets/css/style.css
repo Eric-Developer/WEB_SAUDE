@@ -202,7 +202,6 @@ main{
 }
 
 
-
 .div-buttons .div-button a{
     display: flex;
     justify-content: center;
@@ -384,6 +383,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .div-buttons-catalogo .buuton-prox-ant{
@@ -433,53 +433,88 @@ main{
     opacity: 100%;
 }
 
-/* section about*/
 
-.section-about{
-    background-color: var(--primary-color);
-    border-radius: var(--card-radius);
-    box-shadow: var(--shadow);
-    margin-top: 70px;
-    margin-bottom: 40px;
-    width: 690px;
-    height: 357px;
- }
- 
- .section-about h3{
-     text-align: center;
-     color: var(--secundary-color);
-     margin-top: 50px;
-     font-size: 30px;
- }
-  .section-about .div-about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    color: var(--secundary-color);
-    padding: 35px;
-    flex-shrink:0;
-
-  }
-
- .section-about p{
-    text-align: justify;
-    font-size: 25px;
-    margin-bottom: 90px;
- }
- 
 /* rodapé */
-
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: var(--primary-color);
-    color: var(--secundary-color);
+.footer-distributed{
+	background: var(--primary-color);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding: 55px 50px;
 }
 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align:middle
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+
+}
+.footer-distributed .footer-left p{
+ color: var(--secundary-color);
+    
+}
+
+/*  logo */
+
+.footer-distributed h3{
+	color:  var(--secundary-color);
+    margin-bottom: 5px;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  var(--secundary-color);
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 23%;
+}
+
+.footer-distributed .footer-right p{
+	color: white;
+    margin-top: 20px;
+
+}
 
 footer img{
     width: 100px;
@@ -487,10 +522,7 @@ footer img{
     margin-left: 25px;
 }
 
-footer .div-email p a{
-    color: var(--secundary-color);
-    text-decoration: none;
-}
+
 #btn-mobile{
     display: none;
 
@@ -762,40 +794,27 @@ footer .div-email p a{
         }
 
 
-        /* section about*/
-        .section-about{
-            width: 290px;
-            height: 308px;
-        }
-
-        .section-about h3{
-           margin-top: 25px;
-        }
-        
-        .section-about p{
-            margin-top: -70px;
-            margin-bottom: 0px;
-            font-size: 13px;
-        }
-
         /* Rodapé */
-        footer img{
-            width: 70px;
+        
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
         }
-
-        footer .div-email p{
-            font-size: 10px;
-        }
+    
 }
 
-    @media (max-width: 450px){
-            /* slogamn */
+@media (max-width: 450px){
+    /* slogan */
 
-            
-            .div-linhas .div-linha{
-                width: 100px;
-            }
-        }
+    
+    .div-linhas .div-linha{
+        width: 100px;
+    }
+}
 @media (max-width: 350px){
         .section-slogan{
              width: 250px;
@@ -827,10 +846,7 @@ footer .div-email p a{
             margin: 30px;
         
         }
-        /* Rodapé */
-        footer img{
-            width: 40px;
-        }
+      
 
 }
 @media (min-width:768px) and  (max-width:992px){
