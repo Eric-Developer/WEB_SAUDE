@@ -453,14 +453,16 @@ main{
   }
   .popup{
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 10%;
     padding: 20px;
     background-color: var(--secundary-color);
     position: relative;
+    width: 400px;
+    height: 200px;
+    border-radius: var(--card-radius);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.25); 
+
   }
   
   .popup-close{
@@ -709,6 +711,11 @@ footer .div-email p{
         max-width: 300px;
         margin: 10px 0;
     }
+     /*  button especialidades */
+
+     .popup{
+        width: 300px;
+     }
     footer img{
         width: 70px;
        
@@ -745,10 +752,16 @@ footer .div-email p{
         .dia p{
             font-size: 9px;
         }
+         /*  button especialidades */
+
+        .popup{
+        width: 250px;
+        }
            /* Rodapé */
            footer img{
             width: 40px;
         }
+
    
     }
 

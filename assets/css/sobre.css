@@ -274,14 +274,12 @@ footer .div-email p a{
         }
         }
 
-        @media (max-width: 330px){
+        @media (max-width: 355px){
             /* Rodapé */
             footer img{
                 width: 40px;
             }
-            footer .div-email p{
-                font-size: 10px;
-        }
+           
         .div-info{
             width: 90%;
             height: 300px;
@@ -375,7 +373,7 @@ footer .div-email p a{
         }
         .button-entrar a{
             
-        font-size: 12px;
+            font-size: 12px;
             
             }
 
