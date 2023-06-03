@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 
 :root{
   --primary-color: #00285f;
@@ -10,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'ropa sans', serif,Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sem serifa;
 
 }
 

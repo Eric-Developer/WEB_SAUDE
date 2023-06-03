@@ -7,14 +7,13 @@
     "background_color": "#00285f",
     "description": "Sistema que fornece informações de hospitais e clinicas e suas especilidades",
     "theme_color":"#f9f9f1",
-    "orientation": "any",
+    "orientation": "portrait",
     "prefer_related_applications": false,
     "icons": [{
-      "src": "/assets/img/logo-web-saude.png",
+      "src": "/assets/img/logo-icon-1.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }]
-   
       
   }
