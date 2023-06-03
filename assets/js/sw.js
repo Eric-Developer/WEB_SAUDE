@@ -1,7 +1,7 @@
-
+const staticCacheName = 'eric-santos-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
 self.addEventListener('install', function(event){
     event.waitUntil(
-        caches.open('v1').then(function (cache){
+        caches.open(staticCacheName).then(function (cache){
             cache.addAll([
             
                 '/index.html',
@@ -27,9 +27,20 @@ self.addEventListener('install', function(event){
     return self.skipWaiting()
 })
 
-self.addEventListener('activate', e =>{
-    self.clients.claim()
-})
+
+this.addEventListener('activate', event => {
+    event.waitUntil(
+      caches.keys().then(cacheNames => {
+        return Promise.all(
+          cacheNames
+            .filter(cacheName => (cacheName.startsWith('eric-santos-')))
+            .filter(cacheName => (cacheName !== staticCacheName))
+            .map(cacheName => caches.delete(cacheName))
+        );
+      })
+    );
+  });
+      
 
 self.addEventListener('fetch', async e =>{
     const req = e.request

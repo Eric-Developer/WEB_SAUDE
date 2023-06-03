@@ -2,7 +2,7 @@
     "name": "Web-saude",
     "short_name": "Web-Saude",
     "lang":"pt-br",
-    "start_url": "/",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#00285f",
     "description": "Sistema que fornece informações de hospitais e clinicas e suas especilidades",
