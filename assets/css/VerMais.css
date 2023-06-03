@@ -432,20 +432,44 @@ main{
   }
 
 /* button  especialidades */
-.button-especialidades{
+
+.button-esp{
+    display: block;
+    margin: 20px auto;
+    color: var(--secundary-color);
+    border: 0;
+    cursor: pointer;
+    padding: 6px 10px;
     width: 150px;
     height: 38px;
     border-radius: var(--button-radius);
     background-color: var(--primary-color);
-    margin-top: 20px;
+  }
 
-}
-
-.button-especialidades details summary{
-    color:var(--secundary-color);
+  .popup-wrapper{
+    display: none;
+    
+   
+  }
+  .popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 10px;
-}
+    margin: 10%;
+    padding: 20px;
+    background-color: var(--secundary-color);
+    position: relative;
+  }
+  
+  .popup-close{
+    position: absolute;
+    top:5px;
+    right: 10px;
+    cursor: pointer;
+  }
+
 /* mapa */
 .div-mapa{
     position: relative;

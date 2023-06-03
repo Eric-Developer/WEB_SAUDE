@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="informações">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="WEB SAÚDE">
+    <meta name="apple-mobile-web-app-title" content="PWA Workshop">
     <title>Web Saúde - Ver mais</title>
     <link rel="stylesheet" href="/assets/css/VerMais.css">
     <link rel="shortcut icon" href="/assets/img/logo-icon.png" type="image/x-icon">
@@ -165,13 +170,18 @@
                 </div>
               </div>
             </section>
-          
-            <div  class="button-especialidades">
-                <details id="espcialidades">
-                    <summary>Especialidades</summary>
-                </details>
+             <!--especialidades-->
+            
+            <button class="button-esp">Especialidades</button>
+            <div class="popup-wrapper">
+                <div class="popup">
+                <div class="popup-close">x</div>
+                <div class="popup-content">
+                    <p>Especialidade médica</p>
+                </div>
+                </div>
             </div>
-
+   
         <div id="mapa" class="div-mapa"></div>
 
     </main>
@@ -184,10 +194,11 @@
         </div>
         <img src="/assets/img/logo.png" alt="logo">
     </footer>
-
+   
     <script src="/assets/js/index.js"></script>
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/APIS/mapa.js"></script>
+    <script src="/assets/js/popup.js"></script>
 
 </body>
 

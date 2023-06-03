@@ -253,14 +253,14 @@ main{
     height: 450px;
     background-color: var(--secundary-color);
     border-radius: 6px;
-    box-shadow: 0 1px 5px 1px rgba(0,0,0,.3);
+    box-shadow: 0 5px 5px 1px rgba(0,0,0,.3);
     margin: 40px;
     border-radius: 6px;
 
 }
 .card-container:hover , .card-container:hover .button{
     transition: .3s ease;
-      background-color:  #00285f;
+    background-color: var(--primary-color);
     color: var(--secundary-color);
 }
 
@@ -467,6 +467,7 @@ main{
     font-size: 25px;
     margin-bottom: 90px;
  }
+ 
 /* rodapé */
 
 footer{
