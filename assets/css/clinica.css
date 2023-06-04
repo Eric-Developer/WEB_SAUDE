@@ -105,11 +105,3 @@ label{
     justify-content: center
 }
 
-@media (min-width:0px) and  (max-width:992px){
-    .div-formulario{
-        
-        width: 100%;
-        height:100%;
-        gap: 20px;
-    }
-}

@@ -516,7 +516,7 @@ main{
 }
 
 .footer-distributed .footer-right p{
-	color: white;
+	color: var(--secundary-color);
     margin-top: 20px;
 
 }
@@ -732,10 +732,7 @@ footer img{
 
         width: 300px;
         height: 380px;
-        background-color: #fff;
         border-radius: 6px;
-        box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
-        margin: 30px;
     
     }
         /* nome */
@@ -747,7 +744,6 @@ footer img{
         /* endereço e horario */
 
     .button{
-        background-color: #fff;
         padding: 20px;
         padding-top: 60px;
         text-align: center;
