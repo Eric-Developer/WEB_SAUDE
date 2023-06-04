@@ -189,7 +189,12 @@ main{
     color: var(--secundary-color);
 
 }
+.card-container:hover .button .div-ver-mais .div-button-ver-mais,.card-container:hover .button .div-ver-mais .div-button-ver-mais a{
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    border-radius: var(--button-radius);
 
+}
 .top{
     height: 100px;
     border-radius: 6px;
@@ -532,7 +537,6 @@ main{
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-	text-decoration: none;
 	color:  inherit;
 }
 

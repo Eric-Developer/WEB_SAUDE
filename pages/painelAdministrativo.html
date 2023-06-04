@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Web Saúde - Painel</title>
+    <link rel="stylesheet" href="/assets/css/painelAdministrativo.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="shortcut icon" href="/assets/img/logo-icon.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3>Web Saúde</h3>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(img/3.jpeg)"></div>
+                <h4>Eric Santos</h4>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="" class="active">
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <small>Perfil</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <small>Clínicas</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <small>Hospitais</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <small>Cadastrar Clínica</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <small>Cadastrar Hospital</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                   
+    
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(img/1.jpeg)"></div>
+                        
+                        <span class="las la-power-off"></span>
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            
+            <div class="page-header">
+                <h1>Dashboard</h1>
+                <small>Home / Dashboard</small>
+            </div>
+            
+            <div class="page-content">
+            
+                <div class="analytics">
+
+                    
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>340,230</h2>
+                            <span class="las la-eye"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>visualizações de página</small>
+                            <div class="card-indicator">
+                                <div class="indicator two" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>47,500</h2>
+                            <span class="las la-envelope"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Novos e-mails recebidos</small>
+                            <div class="card-indicator">
+                                <div class="indicator four" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="records table-responsive">
+
+                    <div class="record-header">
+                        <div class="add">
+                            <span>Entradas</span>
+                            <select name="" id="">
+                                <option value="">ID</option>
+                            </select>
+                            <button>Buscar</button>
+                        </div>
+
+                        <div class="browse">
+                           <input type="search" placeholder="Search" class="record-search">
+                           
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+             
+            <!-- cards -->
+            <section class="section-card">
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/clinica-medcenter.jpeg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Clinica Medcenter</h3>
+                        <p>Av. Nossa Sra. de Fátima, 629 - Centro, Picos - PI,
+                            64600-148</p>
+                            <p>Aberto de Segunda a Sexta das <Strong> 07:00</Strong> até as <Strong>18:00</Strong></p>
+                            <div class="div-ver-mais btn-margin">
+                                <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                    <a href="/pages/verMais.html">Ver mais</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/clinica-popular-de-picos.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Clinica Popular de Picos</h3>
+                        <p>Av. Nossa Sra. de Fátima, 517 - Fátima, Picos - PI, 64600-000
+                        </p>
+                        <p>Aberto de Segunda a Sexta das <Strong>07:00</Strong> até as <Strong>18:30</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                            <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                <a href="">Ver mais</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/clinica-doutor-picos.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Clínica Popular Doutor Picos</h3>
+                        <p>Av. Nossa Sra. de Fátima, 682 - Centro, Picos - PI, 64600-146</p>
+                        <p>Aberto de Segunda a Sexta das <Strong> 07:00</Strong> até as <Strong>17:30</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                            <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                <a href="">Ver mais</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/clinica-equipe-odontus.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Clínica Equipe Odontus</h3>
+                        <p>Av. Getúlio Vargas, 504 - Centro, Picos - PI, 64600-000</p>
+                        <p>Aberto de Segunda a Sexta das <Strong> 08:00</Strong> até as <Strong>18:00</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                            <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                <a href="">Ver mais</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/policlica-de-picos.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Policlinica de Picos</h3>
+                        <p>Av. Getúlio Vargas, s/n - Centro, Picos - PI, 64600-000</p>
+                        <p>Aberto de Segunda a Sexta das <Strong> 07:00</Strong> até as <Strong>17:00</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                        <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                            <a href="">Ver mais</a>
+                        </div>
+                </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/clinica-santa-sofia.jpeg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Clínica Santa Sofia</h3>
+                        <p>Av. Nossa Sra. de Fátima, 733 - Malva, Picos - PI, 64600-000</p>
+                        <p>Aberto de Segunda a Sexta das <Strong> 08:00</Strong> até as <Strong>17:00</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                            <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                <a href="">Ver mais</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/clinical-center-picos.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Clinical Center Picos</h3>
+                        <p>R. Monsenhor Hipólito, 559 - Centro, Picos - PI, 64600-104</p>
+                        <p>Aberto de Segunda a Sexta das <Strong> 07:00</Strong> até as <Strong>17:00</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                            <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                <a href="">Ver mais</a>
+                            </div>
+                    </div>                                </div>            </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/prontoclinica.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Prontoclinica</h3>
+                        <p>R. Osvaldo Cruz, 357, Picos - PI, 64600-000</p>
+                        <p>Aberto de Segunda a Sexta das <Strong> 07:00</Strong> até as <Strong>17:00</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                            <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                <a href="">Ver mais</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="top">
+                        <div class="image-container">
+                            <img src="/assets/img/hospital-dr-Oscar.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <h3>Hospital Dr. Oscar</h3>
+                        <p> Av. Nossa Sra. de Fátima, 670 - Canto da Várzea, Picos - PI, 64600-146</p>
+                        <p>Todos os dias: <Strong> Atendimento 24 horas</Strong></p>
+                        <div class="div-ver-mais btn-margin">
+                            <div class="div-button-ver-mais div-button-ver-mais-hospitais">
+                                <a href="">Ver mais</a>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </main>
+        
+    </div>
+    <script src="/assets/js/index.js"></script>
+
+</body>
+</html>

@@ -81,10 +81,13 @@ section{
 	align-items: center;
 	
 }
-.logo{
+.div-logo{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
+}
+.div-logo img{
+	width: 150px;
 }
 .div-form{
 	display: flex;
@@ -103,7 +106,7 @@ section{
 	justify-content: center;
 	flex-direction: column;
 }
-input , textarea , button{
+ .div-inputs input ,.div-inputs textarea , .div-button button{
 	margin-top: 30px;
 
 }
@@ -184,10 +187,8 @@ h1{
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-	text-decoration: none;
 	color:  inherit;
 }
-
 
 /* Footer Center */
 
@@ -195,13 +196,10 @@ h1{
 	width: 35%;
 }
 
-
-
 .footer-distributed .footer-center p a{
 	color:  lightseagreen;
 	text-decoration: none;;
 }
-
 
 .footer-distributed .footer-links .link-1:before {
   content: none;
@@ -306,10 +304,25 @@ footer img{
 			transform: rotate(-135deg);
 			top: -7px;
 		}
-	.div-form{
-		
-		width: 320px;
+		 /* button de login */
 
+		 .button-entrar{
+            width: 80px;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+        .button-entrar a{
+            
+           font-size: 12px;
+            
+            }
+		.div-form{
+		
+			width: 320px;
+	}
+	.div-logo img{
+		width: 100px;
 	}
 
  .div-inputs textarea{
