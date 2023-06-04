@@ -800,10 +800,10 @@ footer img{
         height: 24px;
     }
   /* Rodapé */
-   footer{
-   width: 100%;
-   margin-left:  0%;
-   }
+  .footer-distributed{
+    margin-left: 0%;
+    width: 100%;
+  }
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right{
@@ -814,4 +814,5 @@ footer img{
   }
 
 }
+
 
