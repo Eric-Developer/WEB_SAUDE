@@ -7,8 +7,12 @@
     --shadow:12px 12px 10px rgba(0,0,0,0.25);
   }
   
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 
-* {
+  }
+
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -83,6 +87,11 @@
     border: 3px solid #899DC1;
 }
 
+.profile-img img{
+    width: 100%;
+    border-radius: 50%;
+
+}
 .profile h4 {
     color:var(--secundary-color);
     font-weight: 500;
@@ -102,22 +111,12 @@
     padding: 1.2rem 0rem;
 }
 
-.side-menu a.active {
-    background-color: grey;
-}
-
-.side-menu a.active span, .side-menu a.active small {
-    color: var(--secundary-color);
-}
-
-.side-menu a span {
-    display: block;
-    text-align: center;
-    font-size: 1.7rem;
-}
-
 .side-menu a span, .side-menu a small {
     color: var(--secundary-color);
+}
+
+.side-menu ul li a small:hover{
+   color: red;
 }
  /* menu hamburger */
 #menu-toggle:checked ~ .sidebar {
@@ -145,7 +144,6 @@
 #menu-toggle:checked ~ .sidebar .side-menu a span {
     font-size: 1.3rem;
 }
-
 
 .main-content {
     margin-left: 165px;
@@ -184,17 +182,6 @@ header {
     cursor: pointer;
 }
 
-.header-menu {
-    justify-content: flex-end;
-    padding-top: .5rem;
-}
-
-.header-menu label,
-.header-menu .notify-icon {
-    margin-right: 2rem;
-    position: relative;
-}
-
 
 
 .user {
@@ -225,6 +212,7 @@ main {
     padding: 1.3rem 1rem;
     background-color: var(--secundary-color);
     border-bottom: 1px solid var(--secundary-color);
+    
 }
 
 .page-header h1, .page-header small {
@@ -287,12 +275,12 @@ main {
     border-radius: 4px;
 }
 
-.indicator.one {
-    background: #22baa0;
+.indicator.two {
+    background-color: #22baa0;
 }
 
 .indicator.four {
-    background: #f25656;
+    background-color: #f25656;
 }
  /* registros */
 .registros {
@@ -346,7 +334,7 @@ input, button, select {
 }
 
 .browse input {
-    width: 150px;
+    width: 100px;
 }
 
 .browse select {
@@ -357,6 +345,7 @@ input, button, select {
     width: 100%;
     overflow: auto;
 }
+
  /* cards */
 .section-card{
     display: flex;
@@ -671,7 +660,10 @@ footer img{
         margin-left: 0;
         width: 100%;
     }
-    
+
+    .page-header {
+      margin-top: 50px;
+    }
     #menu-toggle:checked ~ .sidebar {
         left: 0;
     }

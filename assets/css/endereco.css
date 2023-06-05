@@ -4,7 +4,10 @@
   --secundary-color:#f9f9f1;
   --button-radius:15px;
 }
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 
+  }
 *{
     padding: 0;
     margin: 0;
@@ -13,10 +16,25 @@
 
 }
 body{
-    background-color: #eeeeee;
+    background-color: var(--primary-color);
     
 } 
+header {
+    background-color: var(--primary-color);
+}
+header .user{
+    padding-top: 20px;
+    padding-left: 20px;
+}
 
+header .user a span{
+    color: var(--secundary-color);
+    font-size: 20px;
+}
+
+header .user a span:hover{
+    color: red;
+}
 .main-container{
     display: flex;
     justify-content: center;
