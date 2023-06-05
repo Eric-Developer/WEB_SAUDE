@@ -11,6 +11,7 @@ self.addEventListener('install', function(event){
                 '../pages/login.html',
                 '../pages/verMais.html',
                 '../pages/sobre.html',
+                '../pages/painelAdmnistrativo.html',
                 '../assets/css/style.css',
                 '../assets/css/clinica.css',
                 '../assets/css/hospital.css',
@@ -18,6 +19,7 @@ self.addEventListener('install', function(event){
                 '../assets/css/login.css',
                 '../assets/css/verMais.css',
                 '../assets/css/sobre.css',
+                '../assets/css/painelAdmnistrativo.css',
                 '../assets/js/app.js',
                 '/assets/js/APIS/mapa.js'
 

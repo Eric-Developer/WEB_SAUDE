@@ -17,15 +17,13 @@
     font-family: 'Ubuntu', sem serifa;
 
 }
-body{
-    background-color: #eeeeee;
-    
-} 
+
  /* menu */
 
 #menu-toggle {
     display: none;
 }
+
 
 .sidebar {
     position: fixed;
@@ -35,23 +33,25 @@ body{
     bottom: 0;
     top: 0;
     z-index: 100;
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     transition: left 300ms;
 }
 
 .side-header {
     box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
-    background: #22BAA0;
+    background-color: #22BAA0;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.side-header h3, .side-head span {
+ .side-head span {
     font-weight: 400;
 }
-
+.side-header img{
+    width: 60px;
+}
 .side-content {
     height: calc(100vh - 60px);
     overflow: auto;
@@ -62,22 +62,7 @@ body{
   width: 5px;
 }
 
-/*Acompanhar */
-.side-content::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/*  */
-.side-content::-webkit-scrollbar-thumb {
-  background: #b0b0b0; 
-  border-radius: 10px;
-}
-
-/* lidar com o hover */
-.side-content::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
+/* perfil */
 
 .profile {
     text-align: center;
@@ -90,7 +75,6 @@ body{
     border-radius: 50%;
     background-size: cover;
 }
-    /* perfil */
 .profile-img {
     height: 80px;
     width: 80px;
@@ -119,7 +103,7 @@ body{
 }
 
 .side-menu a.active {
-    background-color: #2B384E;
+    background-color: grey;
 }
 
 .side-menu a.active span, .side-menu a.active small {
@@ -135,7 +119,7 @@ body{
 .side-menu a span, .side-menu a small {
     color: var(--secundary-color);
 }
- /* meun hamburger */
+ /* menu hamburger */
 #menu-toggle:checked ~ .sidebar {
     width: 60px;
 }
@@ -167,7 +151,6 @@ body{
     margin-left: 165px;
     width: calc(100% - 165px);
     transition: margin-left 300ms;
-    background-color: var(--secundary-color);
 }
 
 header {
@@ -212,33 +195,16 @@ header {
     position: relative;
 }
 
-.header-menu label span,
-.notify-icon span:first-child {
-    font-size: 1.3rem;
-}
 
-.notify-icon span:last-child {
-    position: absolute;
-    background: var(--primary-color);
-    height: 16px;
-    width: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    right: -5px;
-    top: -5px;
-    color: var(--secundary-color);
-    font-size: .8rem;
-    font-weight: 500;
-}
 
 .user {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.user a{
+    color: var(--secundary-color);
+}
 .user div, .client-img {
     height: 40px;
     width: 40px;
@@ -257,7 +223,7 @@ main {
 
 .page-header {
     padding: 1.3rem 1rem;
-    background: var(--secundary-color);
+    background-color: var(--secundary-color);
     border-bottom: 1px solid var(--secundary-color);
 }
 
@@ -267,7 +233,7 @@ main {
 
 .page-content {
     padding: 1.3rem 1rem;
-    background: var(--secundary-color);
+    background:#eeeeee;
 }
 
 .analytics {
@@ -280,7 +246,7 @@ main {
  /* cade de progressão */
 .card {
     box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 10%);
-    background: var(--secundary-color);
+    background-color: var(--secundary-color);
     padding: 1rem;
     border-radius: 3px;
 }
@@ -312,7 +278,7 @@ main {
     margin: .7rem 0rem;
     height: 10px;
     border-radius: 4px;
-    background: var(--secundary-color);
+    background-color: var(--secundary-color);
     overflow: hidden;
 }
 
@@ -324,7 +290,6 @@ main {
 .indicator.one {
     background: #22baa0;
 }
-
 
 .indicator.four {
     background: #f25656;
@@ -371,7 +336,7 @@ input, button, select {
 }
 
 .add button {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: var(--secundary-color);
     height: 37px;
     border-radius: 4px;
@@ -404,7 +369,6 @@ input, button, select {
     background-color: var(--secundary-color);
     border-radius: 6px;
     box-shadow: 0 5px 5px 1px rgba(0,0,0,.3);
-    border-radius: 6px;
     margin: 30px;
 
 }
@@ -575,6 +539,7 @@ input, button, select {
 }
 
 .div-buttons-catalogo .button-catalogo a {
+    display: flex;
     text-decoration: none;
     color: black;
     height: 100%;
@@ -589,7 +554,10 @@ input, button, select {
     mix-blend-mode: hard-light;
     opacity: 100%;
 }
-
+.div-buttons-catalogo .button-catalogo a:hover{
+    background-color: gray;
+    
+  }
 /* rodapé */
 .footer-distributed{
 	background: var(--primary-color);
@@ -667,7 +635,7 @@ input, button, select {
 }
 
 .footer-distributed .footer-right p{
-	color: white;
+	color: var(--secundary-color);
     margin-top: 20px;
 
 }

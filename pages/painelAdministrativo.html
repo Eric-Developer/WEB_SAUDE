@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="página inicial">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="WEB SAÚDE">
+    <meta name="apple-mobile-web-app-title" content="PWA Workshop">
+    <meta name="theme-color" content="#00285f">
     <title>Web Saúde - Painel</title>
     <link rel="stylesheet" href="/assets/css/painelAdministrativo.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -13,10 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-   <input type="checkbox" id="menu-toggle">
+   <input type="checkbox" id="menu-toggle" title="menu">
     <div class="sidebar">
         <div class="side-header">
-            <h3>Web Saúde</h3>
+            <img src="/assets/img/logo.png" alt="logo">
         </div>
         
         <div class="side-content">
@@ -68,7 +74,7 @@
         <header>
             <div class="header-content">
                 <label for="menu-toggle">
-                    <span class="las la-bars"></span>
+                    <span class="las la-bars" style="font-size: 30px; margin-top: 10px;"></span>
                 </label>
                 
                 <div class="header-menu">
@@ -76,15 +82,14 @@
     
                     <div class="user">
                         <div class="bg-img" style="background-image: url(img/1.jpeg)"></div>
-                        
+                        <a href="/pages/login.html">
                         <span class="las la-power-off"></span>
-                        <span>Logout</span>
+                        <span>Logout</span></a>
                     </div>
                 </div>
             </div>
         </header>
-        
-        
+         
         <main>
             
             <div class="page-header">
@@ -96,7 +101,6 @@
             
                 <div class="analytics">
 
-                    
                     <div class="card">
                         <div class="card-head">
                             <h2>340,230</h2>
@@ -109,7 +113,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="card">
                         <div class="card-head">
@@ -126,12 +129,11 @@
 
                 </div>
 
-
                 <div class="registros table-responsive">
 
                     <div class="registro-header">
                         <div class="add">
-                            <button>Entradas</button>
+                            <button style="margin-right: 10px;">Buscar</button>
                             <select name="" id="">
                                 <option value="">ID</option>
                             </select>
@@ -317,40 +319,6 @@
         </main>
         
     </div>
-      <!--footer-->
-      <footer class="footer-distributed">
-    
-        <div class="footer-left">
-  
-          <img src="/assets/img/logo.png" alt="Logo">   
-          <p class="footer-links">
-            <a href="/pages/faleConosco.html" class="link-1">Fale Conosco</a>
-          
-  
-          <p>Web Saúde © 2023</p>
-        </div>
-  
-        <div class="footer-center">
-  
-         
-          <div>
-            <h3>Contato</h3>
-            <p><a href="#">email@.com</a></p>
-          </div>
-  
-        </div>
-  
-        <div class="footer-right">
-  
-            <h3>Sobre Nós</h3>
-            
-                <p>O Web Saúde é uma plataforma que serve para auxiliar as pessoas que 
-                    desconhecem informações essenciais sobre os hospitais ou clínicas 
-                    que estão localizados na região de Picos - PI, mostrando as especialidades 
-                    disponíveis, horário de atendimento ou até mesmo sua localização exata.</p>
-        
-        </div>
-      </footer>
     <script src="/assets/js/index.js"></script>
 
 </body>

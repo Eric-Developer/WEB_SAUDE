@@ -231,16 +231,6 @@ main{
 }
 
 
-.div-linhas{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.div-linhas .div-linha{
-    width: 550px;
-    height: 1px;
-    border: 2px solid black;
-}
 /*card*/
 .section-card{
     display: flex;
@@ -384,6 +374,7 @@ main{
 }
 
 /*buttons do catálogo*/
+
 .div-buttons-catalogo {
     display: flex;
     justify-content: center;
@@ -424,6 +415,7 @@ main{
 }
 
 .div-buttons-catalogo .button-catalogo a {
+    display: flex;
     text-decoration: none;
     color: black;
     height: 100%;
@@ -431,6 +423,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+
 }
 
 .div-buttons-catalogo .buuton-prox-ant:hover{
@@ -439,7 +433,10 @@ main{
     opacity: 100%;
 }
 
-
+.div-buttons-catalogo .button-catalogo a:hover{
+  background-color: gray;
+  
+}
 /* rodapé */
 .footer-distributed{
 	background: var(--primary-color);
@@ -715,19 +712,8 @@ footer img{
     }
     
     /* catálogo*/
-
-    .div-catalogo h2{
-        font-size: 13px;
-        margin-top: -3px;
-    }
-    
-    .div-linhas .div-linha{
-        width: 140px;
-        height: 1px;
-    }
-    
-    
-    /* card */
+   
+        /* card */
     .card-container{
 
         width: 300px;
@@ -810,19 +796,16 @@ footer img{
 
 @media (max-width: 450px){
 
-/* slogan */
 
-.div-linhas .div-linha{
-    width: 100px;
-}
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 100px;
-    text-align: center;
-}
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 100px;
+        text-align: center;
+    }
 }
 @media (max-width: 400px){
      
@@ -830,9 +813,7 @@ footer img{
             width: 250px;
         }
 
-    .div-linhas .div-linha{
-        width: 70px;
-    }
+   
     .div-buttons .div-button{
     width: 70px;
     height: 27px;
@@ -850,7 +831,7 @@ footer img{
 
     width: 230px;
     height: 380px;
-    background-color: #fff;
+    background-color: var(--secundary-color);
     border-radius: 6px;
     box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
     margin: 30px;
@@ -945,18 +926,8 @@ footer img{
     
     /* catálogo*/
 
-    .div-catalogo h2{
-        font-size: 13px;
-        margin-top: -3px;
-    }
     
-    .div-linhas .div-linha{
-        width: 140px;
-        height: 1px;
-    }
-    
-    
-    /* card */
+            /* card */
     .card-container{
 
         width: 300px;
@@ -1038,17 +1009,6 @@ footer img{
    .section-slogan{
            width: 250px;
        }
-
-   .div-linhas .div-linha{
-       width: 70px;
-   }
-   .div-buttons .div-button{
-   width: 70px;
-   height: 27px;
-   margin-right: 5px;
-   margin-left: 5px;
-
-   }
 
    .div-buttons .div-button a{
    font-size: 8px;
