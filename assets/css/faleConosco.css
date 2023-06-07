@@ -113,7 +113,10 @@ section{
  .div-inputs input{
 	border: none;
 	outline: none;
+	height: 25px;
+	margin-bottom: 5px;
 }
+
 .div-inputs label{
 	margin-bottom: -30px;
 	color: var(--secundary-color);
@@ -122,10 +125,17 @@ section{
 .div-inputs textarea{
 	width: 400px;
 }
+.div-inputs textarea::placeholder{
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	font-size: 20px;
+}
 .div-button button{
 	width: 200px;
 	height: 30px;
 	cursor: pointer;
+	border-radius: 8px;
 }
 button:hover{
 	background-color: var(--secundary-color);
@@ -212,8 +222,9 @@ h1{
 }
 
 .footer-distributed .footer-right p{
-	color: white;
+	color: var(--secundary-color);
     margin-top: 20px;
+	text-align: justify;
 
 }
 
