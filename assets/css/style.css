@@ -248,7 +248,7 @@ main{
     border-radius: 6px;
 
 }
-.card-container:hover , .card-container:hover .button{
+/* .card-container:hover , .card-container:hover .button{
     transition: .3s ease;
     background-color: var(--primary-color);
     color: var(--secundary-color);
@@ -264,7 +264,7 @@ main{
     color: var(--primary-color);
     border-radius: var(--button-radius);
 
-}
+} */
 .top{
     height: 100px;
     border-radius: 6px;
@@ -346,9 +346,9 @@ main{
 }
 
  .div-button-ver-mais:hover{
-    background-color: var(--secundary-color);
     opacity: 100%;
     cursor: pointer;
+    mix-blend-mode: hard-light;
 }
 
  .div-ver-mais .div-button-ver-mais{
@@ -718,7 +718,7 @@ footer img{
         /* card */
     .card-container{
 
-        width: 300px;
+        width: 320px;
         height: 390px;
         border-radius: 6px;
     

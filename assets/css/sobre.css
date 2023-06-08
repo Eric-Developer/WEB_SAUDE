@@ -214,9 +214,9 @@ main{
 }
 
 .footer-distributed .footer-right p{
-	color: white;
+	color: var(--secundary-color);
     margin-top: 20px;
-
+    text-align: justify;
 }
 
 footer img{
