@@ -250,12 +250,12 @@ main{
 
 }
 
-
 .card-container .div-button-ver-mais:hover{
     mix-blend-mode: hard-light;
     opacity: 100%;
     cursor: pointer;
 }
+
 
 .top{
     height: 100px;
@@ -324,9 +324,9 @@ main{
 }
 
  .div-button-ver-mais:hover{
-    background-color: var(--secundary-color);
     opacity: 100%;
     cursor: pointer;
+    mix-blend-mode: hard-light;
 }
 
  .div-ver-mais .div-button-ver-mais{
@@ -697,7 +697,9 @@ footer img{
     .card-container{
 
         width: 320px;
+
         height: 400px;
+        height: 390px;
         border-radius: 6px;
     
     }
@@ -771,7 +773,6 @@ footer img{
         margin-bottom: 100px;
         text-align: center;
     }
-
 }
 
 @media (max-width: 450px){

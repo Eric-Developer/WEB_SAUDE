@@ -8,6 +8,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 L.marker([-7.08484,-41.47252]).addTo(map)
-    .bindPopup('Localização')
+    .bindPopup('Av. Nossa Sra. de Fátima, 629 - Centro, Picos - PI')
     .openPopup();
 

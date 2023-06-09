@@ -574,94 +574,9 @@ input, button, select {
 }
 .div-buttons-catalogo .button-catalogo a:hover{
     background-color: gray;
-    
+
   }
-/* rodapé */
-.footer-distributed{
-	background: var(--primary-color);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 99%;
-	text-align: left;
-	padding: 55px 50px;
-    margin-left: 1%;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align:middle
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-
-}
-.footer-distributed .footer-left p{
- color: var(--secundary-color);
-    
-}
-
-/*  logo */
-
-.footer-distributed h3{
-	color:  var(--secundary-color);
-    margin-bottom: 5px;
-}
-
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  var(--secundary-color);
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	color:  inherit;
-}
-
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-
-.footer-distributed .footer-center p a{
-	color:  lightseagreen;
-	text-decoration: none;;
-}
-
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 23%;
-}
-
-.footer-distributed .footer-right p{
-	color: var(--secundary-color);
-    margin-top: 20px;
-
-}
-
-footer img{
-    width: 100px;
-    margin-right: 25px;
-    margin-left: 25px;
-}
+  
 .sidebar {
     left: -165px;
     z-index: 90;
@@ -708,7 +623,8 @@ header {
     }
 }
 
-@media only screen and (max-width: 768px) {
+/*------------------RESPONSIVIDADE------------------*/
+@media(max-width:768px){
     .analytics {
         grid-template-columns: 100%;
     }
@@ -767,8 +683,8 @@ header {
             margin-top: 15px;
             margin-bottom: 0px;
         }
-        .section-card .card-container .buttons .button-alterar ,.section-card .buttons .button-deletar {
-            width: 120px;
+        .section-card .buttons .button-alterar ,.section-card .buttons .button-deletar {
+            width: 150px;
             height: 30px;
             border-radius: var(--button-radius);
             margin-left: 10px;
@@ -780,7 +696,7 @@ header {
         }
         .section-card .card-container{
             
-                width: 300px;
+                width: 350px;
                 height: 400px;
                 background-color: var(--secundary-color);
                 border-radius: 6px;
@@ -860,5 +776,14 @@ header {
                 text-align: center;
             }
             
+        }
+        @media (max-width:360px){
+            .section-card .buttons .button-alterar ,.section-card .buttons .button-deletar {
+                width: 90px;
+                height: 30px;
+                border-radius: var(--button-radius);
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
         

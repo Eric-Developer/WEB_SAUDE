@@ -198,7 +198,7 @@ main{
 .top{
     height: 100px;
     border-radius: 6px;
-    background-color:  #00285f;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
 
@@ -569,7 +569,6 @@ main{
 	color: var(--secundary-color);
     margin-top: 20px;
     text-align: justify;
-
 }
 
 footer img{
