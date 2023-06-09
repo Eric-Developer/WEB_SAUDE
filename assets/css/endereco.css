@@ -21,19 +21,23 @@ body{
 } 
 header {
     background-color: var(--primary-color);
+    position: fixed;
+    z-index: 1000;
 }
 header .user{
     padding-top: 20px;
     padding-left: 20px;
 }
 
-header .user a span{
+header .user a{
     color: var(--secundary-color);
     font-size: 20px;
+    text-decoration: none;
 }
 
-header .user a span:hover{
+header .user a:hover{
     color: red;
+    cursor: pointer;
 }
 .main-container{
     display: flex;
@@ -98,6 +102,7 @@ header .user a span:hover{
     border-radius: var(--button-radius);
     background-color: var(--secundary-color);
     color: black;
+    border: none;
 }
 
 .div-button button:hover{

@@ -364,7 +364,6 @@ input, button, select {
     align-items: center;
     border-radius: var(--button-radius);
     margin-top: 50px;
-    margin-bottom: -40px;
 }
 .section-card .buttons .button-alterar ,.section-card .buttons .button-deletar {
     width: 150px;

@@ -20,18 +20,20 @@ html {
 
 header {
     background-color: var(--primary-color);
+    position: fixed;
+    z-index: 1000;
 }
 header .user{
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 20px;
 }
 
-header .user a span{
+header .user a{
     color: var(--secundary-color);
     font-size: 20px;
 }
 
-header .user a span:hover{
+header .user a:hover{
     color: red;
 }
 main{background-color: var(--primary-color);
@@ -91,7 +93,7 @@ input::placeholder{
 
 .cadastro-horario p{
     font-size: 12px;
-    color: white;
+    color: var(--secundary-color);
 }
 
 .horario{
@@ -107,8 +109,13 @@ input::placeholder{
     outline: none;
 
 }
-
-.div-button{
+input:hover{
+    cursor: none;
+}
+.cursor:hover{
+    cursor: pointer;;
+}
+.div-button ,.div-button-prox{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,11 +124,17 @@ input::placeholder{
     border-radius: var(--button-radius);
     background-color: var(--secundary-color);
     color: black;
+    border: none;
 }
-.div-button:hover{
-    mix-blend-mode: hard-light;
-    opacity: 100%;
+.div-button option{
+    text-align: center;
+}
+
+.div-button-prox:hover{
+    mix-blend-mode:hard-light;
     cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
 }
 label{
     display: flex;

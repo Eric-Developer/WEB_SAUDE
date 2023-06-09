@@ -8,6 +8,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 
   }
+
 *{
     padding: 0;
     margin: 0;
@@ -18,18 +19,20 @@ html {
 }
 header {
     background-color: var(--primary-color);
+    position: fixed;
+    z-index: 1000;
 }
 header .user{
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 20px;
 }
 
-header .user a span{
+header .user a{
     color: var(--secundary-color);
     font-size: 20px;
 }
 
-header .user a span:hover{
+header .user a:hover{
     color: red;
 }
 main{
@@ -88,7 +91,7 @@ main{
     display: none;
 }
 
-.div-button{
+.div-button, .div-button-prox{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,13 +100,20 @@ main{
     border-radius: var(--button-radius);
     background-color: var(--secundary-color);
     color: black;
+    outline: none;
 }
-.div-button:hover{
-    mix-blend-mode: hard-light;
-    opacity: 100%;
+.div-button-prox:hover{
+    mix-blend-mode:hard-light;
     cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
 }
-
+.div-button option{
+    text-align: center;
+}
+.cursor:hover{
+    cursor: pointer;;
+}
 label{
     display: flex;
     align-items: center;
