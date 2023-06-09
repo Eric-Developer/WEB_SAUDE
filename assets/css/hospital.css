@@ -100,7 +100,7 @@ main{
     border-radius: var(--button-radius);
     background-color: var(--secundary-color);
     color: black;
-    outline: none;
+    border: none;
 }
 .div-button-prox:hover{
     mix-blend-mode:hard-light;
