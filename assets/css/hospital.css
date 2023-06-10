@@ -103,7 +103,7 @@
       display: none;
   }
   
-  .div-button, .div-button-prox{
+  .div-button, .div-button-prox,.div-inputs{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -114,7 +114,16 @@
       color: black;
       outline: none;
   }
-  .div-button-prox:hover{
+   .div-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.div-formulario .div-button a .div-button-prox{
+    border: none;
+}
+  .div-formulario .div-button a .div-button-prox:hover{
       mix-blend-mode:hard-light;
       cursor: pointer;
       background-color: var(--primary-color);
@@ -124,7 +133,7 @@
       text-align: center;
   }
   .cursor:hover{
-      cursor: pointer;;
+      cursor: pointer;
   }
   label{
       display: flex;
@@ -140,7 +149,5 @@
       top: 5px;
       left: 5px;
   }
-  
-  
   
   
