@@ -696,7 +696,7 @@ header {
         }
         .section-card .card-container{
             
-                width: 350px;
+                width: 280px;
                 height: 400px;
                 background-color: var(--secundary-color);
                 border-radius: 6px;
@@ -722,9 +722,9 @@ header {
                     margin-top: -40px;
                     
             }
-            .section-card  .card-container  .button p{
+        .section-card  .card-container  .button p{
                     margin: 35px;
-                    font-size: 14px;
+                    font-size: 12px;
             
             }
                 /* imagem*/
@@ -740,9 +740,10 @@ header {
             }
                 /* button ver mais */
                 
-            .card-container .button  .div-ver-mais .div-button-ver-mais{   
-                    width: 120px;
+         .section-card   .card-container .button  .div-ver-mais .div-button-ver-mais{   
+                    width: 100px;
                     height: 25px;
+                    margin-top: 50px;
             
             }
             

@@ -133,8 +133,8 @@ main{
 
 .section-clinica-hospital{
     flex-direction: column;
-    width: 600px;
-    height: 308px;
+    width: 700px;
+    height: 408px;
    }
 .div-clinica-hospital{
     margin-left: 0px;
@@ -144,13 +144,13 @@ main{
 .div-clinica-hospital h1{
     margin-top: 50px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
    }
 
    
 .img-clinica-hospital img{
-    width: 193px;
-    height: 155px;
+    width: 240px;
+    height: 240px;
     margin-right: 0px;
     margin-bottom: 30px;
    }
@@ -168,17 +168,16 @@ main{
 .card-container{
     
     width: 930px;
-    height: 300px;
+    height: 450px;
     background-color: var(--secundary-color);
     border-radius: 6px;
     box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     margin-top: 50px;
     border-radius: 6px;
 
-
 }
-.card-container:hover , .card-container:hover .button{
+/*.card-container:hover , .card-container:hover .button{
     transition: .3s ease;
     background-color:  var(--primary-color);
     color: var(--secundary-color);
@@ -194,7 +193,8 @@ main{
     color: var(--primary-color);
     border-radius: var(--button-radius);
 
-}
+
+}*/
 .top{
     height: 100px;
     border-radius: 6px;
@@ -228,7 +228,8 @@ main{
 
 } 
 
-.button{
+.but
+ton{
     background-color: var(--secundary-color);
     padding: 20px;
     padding-top: 60px;
@@ -267,10 +268,10 @@ main{
     /* atalhos */
  hr{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .div-atalhos{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .div-atalhos ul{
     display: flex;
@@ -287,7 +288,12 @@ main{
    
    }
 
-  
+   .div-atalhos li a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+   
+   }
+
  /* horario */
  .section-horario{
     display: flex;
@@ -301,15 +307,15 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 300px;
+    height: 600px;
     background-color: var(--secundary-color);
     border-radius: 6px;
     box-shadow: 0 1px 5px 1px rgba(0, 0,0, .3);
 }
 
 .div-img img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 .dias{
     display: flex;
@@ -323,8 +329,8 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color:  var(--primary-color);
     margin: 10px;
     color: var(--secundary-color);
