@@ -697,10 +697,15 @@ footer img{
         }
     .section-clinica-hospital{
         flex-direction: column;
-        width: 290px;
+         width: 290px;
          height: 308px;
      }
-     
+     .section-clinica-hospital .div-clinica-hospital h1{
+        font-size: 25px;
+     }
+     .section-clinica-hospital .img-clinica-hospital img{
+        width: 150px;
+     }
     /*card */
     
     .card-container{
