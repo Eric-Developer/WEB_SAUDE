@@ -315,7 +315,7 @@ main{
         font-size: 20px;
     
     }
-  /* button ver mais */
+
   /* button ver mais */
   .div-ver-mais{
     display: flex;
@@ -741,10 +741,7 @@ footer img{
                 
 
 }
-
         /* button ver mais */
-    
-    /* button ver mais */
     
     .section-card .card-container  .div-ver-mais .div-button-ver-mais,
     .section-card .card-container  .div-ver-mais .div-button-ver-mais-hospitais{   
@@ -972,8 +969,6 @@ footer img{
     .card-container{
     width: 700px;
     }
-    .div-linhas .div-linha{
-    width: 200px;
-}
+    
 }
 
