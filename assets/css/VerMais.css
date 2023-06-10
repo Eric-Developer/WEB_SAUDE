@@ -228,8 +228,7 @@ main{
 
 } 
 
-.but
-ton{
+.button{
     background-color: var(--secundary-color);
     padding: 20px;
     padding-top: 60px;
