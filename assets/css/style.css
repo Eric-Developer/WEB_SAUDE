@@ -698,12 +698,11 @@ footer img{
     
     /* catálogo*/
    
-        /* card */
       /* card */
       .section-card .card-container{
 
         width: 280px;
-        height: 400px;
+        height: 380px;
         border-radius: 6px;
     
     }
@@ -726,7 +725,7 @@ footer img{
 }
    .section-card .card-container .button p{
             margin: 35px;
-            font-size: 12px;
+            font-size: 13px;
 
 }
     /* imagem*/
@@ -748,6 +747,12 @@ footer img{
             width: 120px;
             height: 25px;
 
+    }
+    .section-card .card-container  .div-ver-mais .div-button-ver-mais{
+        margin-top: 40px;
+    }
+    .section-card .card-container  .div-ver-mais .div-button-ver-mais-hospitais{
+        margin-top: 25px;
     }
 
     .div-ver-mais .div-button-ver-mais a,.div-ver-mais .div-button-ver-mais-hospitais a {
