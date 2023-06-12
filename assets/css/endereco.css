@@ -111,6 +111,10 @@
       width: 100%;
       height: 100%;
       text-decoration: none;
+      color: black;
+  }
+  .div-button a:hover{
+    color: red;
   }
   .div-button a button{
       width: 100%;
